@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButton(_ sender: Any) {
-        let vc = HomeViewController()
+        let vc = TabBarController()
         navigationController?.pushViewController(vc, animated: true)
     }
     

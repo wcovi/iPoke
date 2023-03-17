@@ -21,9 +21,8 @@ class TypesCollectionViewCell: UICollectionViewCell {
     }
     
     public func setupCell(data: Types) {
-        typesCollectionViewCellScreen.imageTypePokemon.image = UIImage(named: data.nameImage)
+        typesCollectionViewCellScreen.typePokemonButton.setImage(UIImage(named: data.nameImage), for: .normal)
         typesCollectionViewCellScreen.typeLabel.text = data.nameType
-        typesCollectionViewCellScreen.pokebolaImage.image = UIImage(named: data.pokeImage)
     }
     
     required init?(coder: NSCoder) {
@@ -31,8 +30,8 @@ class TypesCollectionViewCell: UICollectionViewCell {
     }
     
     func addSubview() {
-//        typesCollectionViewCellScreen.layer.borderWidth = 1.0
-//        typesCollectionViewCellScreen.layer.borderColor = UIColor.white.cgColor
+//                typesCollectionViewCellScreen.layer.borderWidth = 1.0
+//                typesCollectionViewCellScreen.layer.borderColor = UIColor.white.cgColor
         typesCollectionViewCellScreen.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(typesCollectionViewCellScreen)
     }
@@ -44,8 +43,8 @@ class TypesCollectionViewCell: UICollectionViewCell {
     func configConstraints() {
         NSLayoutConstraint.activate([
             typesCollectionViewCellScreen.topAnchor.constraint(equalTo: topAnchor),
-            typesCollectionViewCellScreen.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 23),
-            typesCollectionViewCellScreen.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -23),
+            typesCollectionViewCellScreen.leadingAnchor.constraint(equalTo: leadingAnchor),
+            typesCollectionViewCellScreen.trailingAnchor.constraint(equalTo: trailingAnchor),
             typesCollectionViewCellScreen.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }

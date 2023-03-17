@@ -10,5 +10,4 @@ import Foundation
 struct Famous {
     var nameType: String
     var nameImage: String
-    var pokeImage: String
 }
