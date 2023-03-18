@@ -349,7 +349,6 @@
 		79717D9029B68E930061AEBC /* iPoke */ = {
 			isa = PBXGroup;
 			children = (
-				797776EF29C602E600BB6AE1 /* Login */,
 				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
 				71995E2129C2E2C900EE4E94 /* TabBar */,
@@ -361,17 +360,10 @@
 				79717D9A29B68E950061AEBC /* Assets.xcassets */,
 				79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */,
 				79717D9F29B68E950061AEBC /* Info.plist */,
-			);
-			path = iPoke;
-			sourceTree = "<group>";
-		};
-		797776EF29C602E600BB6AE1 /* Login */ = {
-			isa = PBXGroup;
-			children = (
 				79717D9529B68E930061AEBC /* ViewController.swift */,
 				79717D9729B68E930061AEBC /* Main.storyboard */,
 			);
-			path = Login;
+			path = iPoke;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
