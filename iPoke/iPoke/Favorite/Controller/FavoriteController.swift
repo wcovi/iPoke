@@ -8,9 +8,15 @@
 import UIKit
 
 class FavoriteController: UIViewController {
+    
+    var favoriteView: FavoriteScreen?
+    
+    override func loadView() {
+        favoriteView = FavoriteScreen()
+        view = favoriteView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .purple
     }
 }

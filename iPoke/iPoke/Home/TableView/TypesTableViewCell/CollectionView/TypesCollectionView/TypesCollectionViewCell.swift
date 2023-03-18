@@ -18,11 +18,12 @@ class TypesCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         addSubview()
         configConstraints()
+        
+        self.backgroundColor = .orange
     }
     
     public func setupCell(data: Types) {
-        typesCollectionViewCellScreen.typePokemonButton.setImage(UIImage(named: data.nameImage), for: .normal)
-        typesCollectionViewCellScreen.typeLabel.text = data.nameType
+        typesCollectionViewCellScreen.typePokemonButton.setBackgroundImage(UIImage(named: data.nameImage), for: .normal)
     }
     
     required init?(coder: NSCoder) {

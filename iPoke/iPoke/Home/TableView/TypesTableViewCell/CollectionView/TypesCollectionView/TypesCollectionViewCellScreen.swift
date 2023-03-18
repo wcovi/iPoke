@@ -7,20 +7,26 @@
 
 import UIKit
 
+protocol TypesScreenDelegate: AnyObject {
+    func tappedButton()
+}
+
 class TypesCollectionViewCellScreen: UIView {
+    
+    private weak var delegate: TypesScreenDelegate?
+    
+    public func delegate(delegate: TypesScreenDelegate?) {
+        self.delegate = delegate
+    }
 
     lazy var typePokemonButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Pokedéx", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
         return button
-    }()
-    
-    lazy var typeLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = .white
-        return label
     }()
     
     override init(frame: CGRect) {
@@ -33,9 +39,12 @@ class TypesCollectionViewCellScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func tappedButton() {
+        delegate?.tappedButton()
+    }
+    
     func addSubview() {
         addSubview(typePokemonButton)
-        addSubview(typeLabel)
     }
     
     func configConstraints() {
@@ -46,17 +55,6 @@ class TypesCollectionViewCellScreen: UIView {
             typePokemonButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             typePokemonButton.widthAnchor.constraint(equalToConstant: 165),
             typePokemonButton.heightAnchor.constraint(equalToConstant: 57),
-            
-            typeLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            typeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            typeLabel.trailingAnchor.constraint(equalTo: typePokemonButton.trailingAnchor, constant: 0),
-            typeLabel.bottomAnchor.constraint(equalTo: typePokemonButton.bottomAnchor, constant: 2),
-            typeLabel.heightAnchor.constraint(equalToConstant: 26),
-            
-            //            pokebolaImage.centerYAnchor.constraint(equalTo: centerYAnchor),
-            //            pokebolaImage.trailingAnchor.constraint(equalTo: imageTypePokemon.trailingAnchor, constant: -7),
-            //            pokebolaImage.heightAnchor.constraint(equalToConstant: 33),
-            //            pokebolaImage.widthAnchor.constraint(equalToConstant: 33),
         ])
     }
 }
