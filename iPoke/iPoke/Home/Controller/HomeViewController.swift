@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var homeView: HomeScreen?
-    var typeScreen = TypesCollectionViewCellScreen()
+    var typeScreen = TypesCollectionViewCell()
     
     override func loadView() {
         homeView = HomeScreen()
@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         homeView?.configTableViewProtocols(delegate: self, dataSource: self)
-        typeScreen.delegate(delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,13 +84,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return 0
     }
-}
-
-extension HomeViewController: TypesScreenDelegate {
-    
-    func tappedButton() {
-        let vc = FavoriteController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
 }

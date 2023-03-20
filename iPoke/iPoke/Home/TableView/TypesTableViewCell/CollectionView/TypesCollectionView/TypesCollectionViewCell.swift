@@ -9,6 +9,12 @@ import UIKit
 
 class TypesCollectionViewCell: UICollectionViewCell {
     
+    private var delegate: TypesScreenDelegate?
+    
+    public func setUpDelegate(delegate: TypesScreenDelegate?) {
+        self.delegate = delegate
+    }
+    
     static let identifier: String = "TypesCollectionViewCell"
     var data: [Types] = []
     
@@ -35,6 +41,7 @@ class TypesCollectionViewCell: UICollectionViewCell {
 //                typesCollectionViewCellScreen.layer.borderColor = UIColor.white.cgColor
         typesCollectionViewCellScreen.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(typesCollectionViewCellScreen)
+        contentView.isUserInteractionEnabled = true
     }
     
     public func dataCollection(data: [Types]) {

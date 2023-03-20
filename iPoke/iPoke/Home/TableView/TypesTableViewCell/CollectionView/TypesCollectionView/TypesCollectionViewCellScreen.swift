@@ -13,11 +13,7 @@ protocol TypesScreenDelegate: AnyObject {
 
 class TypesCollectionViewCellScreen: UIView {
     
-    private weak var delegate: TypesScreenDelegate?
-    
-    public func delegate(delegate: TypesScreenDelegate?) {
-        self.delegate = delegate
-    }
+    private var delegate: TypesScreenDelegate?
 
     lazy var typePokemonButton: UIButton = {
         let button = UIButton()
@@ -25,7 +21,7 @@ class TypesCollectionViewCellScreen: UIView {
         button.setTitle("Pokedéx", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        button.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tappedPokedexButton), for: .touchUpInside)
         return button
     }()
     
@@ -39,7 +35,7 @@ class TypesCollectionViewCellScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func tappedButton() {
+    @objc func tappedPokedexButton() {
         delegate?.tappedButton()
     }
     

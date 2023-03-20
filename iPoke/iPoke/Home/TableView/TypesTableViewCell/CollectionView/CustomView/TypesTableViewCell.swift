@@ -41,6 +41,7 @@ class TypesTableViewCell: UITableViewCell {
     func addSubview() {
         typesTableViewCellScreen.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(typesTableViewCellScreen)
+        contentView.isUserInteractionEnabled = false
     }
     
     func configConstraints() {
@@ -70,6 +71,7 @@ extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TypesCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: TypesCollectionViewCell.identifier, for: indexPath) as? TypesCollectionViewCell
         cell?.setupCell(data: dataType[indexPath.row])
+        cell?.setUpDelegate(delegate: self)
         return cell ?? UICollectionViewCell()
     }
     
@@ -77,7 +79,15 @@ extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         return CGSize(width: 165, height: 57)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("hello")
+        print("hello0")
     }
+}
+
+extension TypesTableViewCell: TypesScreenDelegate {
+    
+    func tappedButton() {
+        print("bbbbbbbbbbbbbbb")
+    }
+    
 }
 
