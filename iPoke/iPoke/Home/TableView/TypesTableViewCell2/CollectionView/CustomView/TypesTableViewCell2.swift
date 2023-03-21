@@ -19,10 +19,6 @@ class TypesTableViewCell2: UITableViewCell {
                              Types(nameType: "Fogo", nameImage: "redCard", pokeImage: "pokebola"),
     ]
     
-    let cellDimension : CGFloat = 380
-    let spaceBetweenCells : CGFloat = 33
-    let numberOfColumns : CGFloat = 1
-    
     var typesTableViewCellScreen2: TypesTableViewCellScreen2 = TypesTableViewCellScreen2()
     
     static let identifier: String = "TypesTableViewCell2"
@@ -58,13 +54,6 @@ extension TypesTableViewCell2: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataType.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let width = self.frame.width
-        let expectUsedSize : CGFloat = (cellDimension * numberOfColumns) + spaceBetweenCells
-        let margins = (width - expectUsedSize) / numberOfColumns
-        return UIEdgeInsets(top: spaceBetweenCells, left: margins, bottom: spaceBetweenCells, right: margins)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

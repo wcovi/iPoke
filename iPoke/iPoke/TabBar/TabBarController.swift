@@ -9,6 +9,12 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBarController()
@@ -18,8 +24,8 @@ class TabBarController: UITabBarController {
     private func setupTabBarController() {
         
         let homeVC = UINavigationController(rootViewController: HomeViewController())
-        let favoriteVC = UINavigationController(rootViewController: FavoriteController())
-        let profileVC = UINavigationController(rootViewController: PerfilViewController())
+        let favoriteVC = UINavigationController(rootViewController: Teste1ViewController())
+        let profileVC = UINavigationController(rootViewController: BioViewController())
         
         self.setViewControllers([homeVC, favoriteVC, profileVC], animated: false)
         

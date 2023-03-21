@@ -13,7 +13,11 @@ protocol TypesScreenDelegate: AnyObject {
 
 class TypesCollectionViewCellScreen: UIView {
     
-    private var delegate: TypesScreenDelegate?
+    weak private var delegate: TypesScreenDelegate?
+    
+    public func setUpDelegate(delegate: TypesScreenDelegate?) {
+        self.delegate = delegate
+    }
 
     lazy var typePokemonButton: UIButton = {
         let button = UIButton()
@@ -36,7 +40,7 @@ class TypesCollectionViewCellScreen: UIView {
     }
     
     @objc func tappedPokedexButton() {
-        delegate?.tappedButton()
+        self.delegate?.tappedButton()
     }
     
     func addSubview() {

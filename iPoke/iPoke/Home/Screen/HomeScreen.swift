@@ -41,7 +41,7 @@ class HomeScreen: UIView {
     lazy var labelNameProfile: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Olá Yan,"
+        label.text = "Hi Yan,"
         label.font = UIFont.boldSystemFont(ofSize: 21)
         label.textColor = .white
         return label
@@ -50,7 +50,7 @@ class HomeScreen: UIView {
     lazy var labelSubTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Qual pokémon você gostaria de pesquisar?"
+        label.text = "Which pokemon would you like to research?"
         label.numberOfLines = 0
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.textColor = .white
@@ -62,7 +62,7 @@ class HomeScreen: UIView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocorrectionType = .no
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Pokémons, Tipos, etc.",
+            string: "Pokémons, Types, Movies.",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.textColor = .white
         textField.backgroundColor = UIColor(red: 87/255.0, green: 87/255.0, blue: 93/255.0, alpha: 1.0)
@@ -138,19 +138,19 @@ class HomeScreen: UIView {
             viewFundoHome.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             viewFundoHome.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             viewFundoHome.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            viewFundoHome.heightAnchor.constraint(equalToConstant: 342),
+            viewFundoHome.heightAnchor.constraint(equalToConstant: 300),
             
             fundoHomePokebolaImageView.topAnchor.constraint(equalTo: topAnchor, constant: 31),
             fundoHomePokebolaImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20),
             fundoHomePokebolaImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 243),
             fundoHomePokebolaImageView.bottomAnchor.constraint(equalTo: viewFundoHome.bottomAnchor, constant: -143),
             
-            imageProfile.topAnchor.constraint(equalTo: topAnchor, constant: 110),
+            imageProfile.topAnchor.constraint(equalTo: topAnchor, constant: 70),
             imageProfile.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
             imageProfile.heightAnchor.constraint(equalToConstant: 62),
             imageProfile.widthAnchor.constraint(equalToConstant: 62),
             
-            labelNameProfile.topAnchor.constraint(equalTo: topAnchor, constant: 128),
+            labelNameProfile.centerYAnchor.constraint(equalTo: imageProfile.centerYAnchor),
             labelNameProfile.leadingAnchor.constraint(equalTo: imageProfile.trailingAnchor, constant: 8),
             
             labelSubTitle.topAnchor.constraint(equalTo: imageProfile.bottomAnchor, constant: 10),

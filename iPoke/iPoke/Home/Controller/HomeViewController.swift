@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var homeView: HomeScreen?
-    var typeScreen = TypesCollectionViewCell()
+    var types = TypesCollectionViewCellScreen()
     
     override func loadView() {
         homeView = HomeScreen()
@@ -38,6 +38,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell( withIdentifier: TypesTableViewCell.identifier, for: indexPath) as? TypesTableViewCell
             cell?.backgroundColor = .clear
+            cell?.navigationDelegate(delegate: self)
             return cell ?? UITableViewCell()
         }
         
@@ -83,5 +84,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return 280
         }
         return 0
+    }
+}
+
+extension HomeViewController: NagivationCustom {
+    func didTapButton(cell: UITableViewCell) {
+        let vc = PokedexViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
