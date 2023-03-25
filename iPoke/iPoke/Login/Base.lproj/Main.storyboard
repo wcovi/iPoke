@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark Side" translatesAutoresizingMaskIntoConstraints="NO" id="xyI-gz-tEf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLogin" translatesAutoresizingMaskIntoConstraints="NO" id="xyI-gz-tEf">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 2" translatesAutoresizingMaskIntoConstraints="NO" id="zfO-Cp-TkE">
@@ -26,7 +26,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LogoEstatica 1" translatesAutoresizingMaskIntoConstraints="NO" id="gdk-iS-l6T">
                                 <rect key="frame" x="114" y="223" width="165" height="82"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuD-dr-4Gu">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kuD-dr-4Gu">
                                 <rect key="frame" x="38" y="327" width="317" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89856684602649006" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-GE-3H7">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpp-GE-3H7">
                                 <rect key="frame" x="38" y="397" width="317" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89856684600000003" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -62,8 +62,8 @@
                                 <rect key="frame" x="38" y="465" width="51" height="31"/>
                                 <color key="onTintColor" red="0.21967166660000001" green="0.41402372720000002" blue="0.73326301569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrar meu usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-J3-Q31">
-                                <rect key="frame" x="95" y="472" width="137" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Remember my e-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-J3-Q31">
+                                <rect key="frame" x="95" y="472" width="143" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -89,18 +89,17 @@
                                     <constraint firstAttribute="width" constant="38" id="Ish-dK-bu4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não tem conta? Clique aqui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-y4-Gf8">
-                                <rect key="frame" x="102.66666666666669" y="803" width="188" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No account? Create here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-y4-Gf8">
+                                <rect key="frame" x="111" y="803" width="171" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kr9-PL-l4U">
-                                <rect key="frame" x="126.66666666666669" y="577" width="140" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewJ-tT-6R0">
+                                <rect key="frame" x="116.66666666666669" y="564" width="160" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,7 +117,6 @@
                             <constraint firstItem="u84-4v-IXH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Juk-4B-RB1"/>
                             <constraint firstAttribute="bottom" secondItem="zfO-Cp-TkE" secondAttribute="bottom" id="LC9-WT-Teh"/>
                             <constraint firstItem="yho-e0-hcp" firstAttribute="centerY" secondItem="zfO-Cp-TkE" secondAttribute="centerY" id="Lg6-n5-ETg"/>
-                            <constraint firstItem="kr9-PL-l4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O7o-BX-dkA"/>
                             <constraint firstItem="u84-4v-IXH" firstAttribute="top" secondItem="lJn-J3-Q31" secondAttribute="bottom" constant="25" id="P28-sZ-1KA"/>
                             <constraint firstItem="zfO-Cp-TkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QHP-g4-THR"/>
                             <constraint firstItem="lJn-J3-Q31" firstAttribute="top" secondItem="kpp-GE-3H7" secondAttribute="bottom" constant="23" id="SsR-f0-Qwh"/>
@@ -127,14 +125,16 @@
                             <constraint firstItem="9wD-OJ-47O" firstAttribute="leading" secondItem="yho-e0-hcp" secondAttribute="trailing" constant="30" id="YJF-5Y-QA7"/>
                             <constraint firstItem="gdk-iS-l6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="brp-3z-E3M"/>
                             <constraint firstItem="lJn-J3-Q31" firstAttribute="leading" secondItem="2F2-kb-2My" secondAttribute="trailing" constant="8" symbolic="YES" id="dDq-7G-DPq"/>
-                            <constraint firstItem="kr9-PL-l4U" firstAttribute="top" secondItem="u84-4v-IXH" secondAttribute="bottom" constant="23" id="dwN-WO-k3Z"/>
                             <constraint firstItem="2F2-kb-2My" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="gKz-qQ-30Q"/>
                             <constraint firstItem="kpp-GE-3H7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="gY7-g2-Qgd"/>
                             <constraint firstItem="Ehl-y4-Gf8" firstAttribute="top" secondItem="9wD-OJ-47O" secondAttribute="bottom" id="gt9-cp-Zk5"/>
                             <constraint firstItem="kpp-GE-3H7" firstAttribute="top" secondItem="kuD-dr-4Gu" secondAttribute="bottom" constant="18" id="hzB-lX-99W"/>
                             <constraint firstItem="xyI-gz-tEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iNU-PX-B9w"/>
+                            <constraint firstItem="zfO-Cp-TkE" firstAttribute="top" secondItem="ewJ-tT-6R0" secondAttribute="bottom" constant="100" id="ipF-pp-WK3"/>
                             <constraint firstItem="9wD-OJ-47O" firstAttribute="centerY" secondItem="zfO-Cp-TkE" secondAttribute="centerY" id="l8W-e7-5Dl"/>
+                            <constraint firstItem="ewJ-tT-6R0" firstAttribute="top" secondItem="u84-4v-IXH" secondAttribute="bottom" constant="10" id="ofI-eE-KF8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kpp-GE-3H7" secondAttribute="trailing" constant="38" id="pG5-Yy-zpC"/>
+                            <constraint firstItem="ewJ-tT-6R0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vkw-V0-0EU"/>
                             <constraint firstItem="Ehl-y4-Gf8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wLn-yp-BaA"/>
                         </constraints>
                     </view>
@@ -165,11 +165,11 @@
     </scenes>
     <resources>
         <image name="Apple - Original" width="40" height="50"/>
-        <image name="Dark Side" width="393" height="852"/>
         <image name="Facebook - Original" width="38" height="38"/>
         <image name="Google - Original" width="38" height="38"/>
         <image name="LogoEstatica 1" width="165" height="82"/>
         <image name="Rectangle 2" width="393" height="158"/>
+        <image name="backgroundLogin" width="393" height="852"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
