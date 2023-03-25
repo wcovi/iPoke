@@ -57,6 +57,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier, for: indexPath) as? NewsTableViewCell
             cell?.backgroundColor = .clear
+            cell?.navigationDelegate(delegate: self)
             return cell ?? UITableViewCell()
         }
         
@@ -85,11 +86,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return 0
     }
+    
 }
 
-extension HomeViewController: NagivationCustom {
+extension HomeViewController: NagivationCustom, NagivationNews{
     func didTapButton(cell: UITableViewCell) {
         let vc = PokedexViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func didTapNewsButton(cell: UITableViewCell) {
+        let vc = NewsViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

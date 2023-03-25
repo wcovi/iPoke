@@ -7,7 +7,17 @@
 
 import UIKit
 
+protocol NagivationNews: AnyObject {
+    func didTapNewsButton(cell: UITableViewCell)
+}
+
 class NewsTableViewCell: UITableViewCell {
+    
+    private weak var navigationNews: NagivationNews?
+    
+    public func navigationDelegate(delegate: NagivationNews) {
+        self.navigationNews = delegate
+    }
 
     var dataNews: [News] = [News(nameImage: "news1"),
                             News(nameImage: "news2"),
@@ -15,10 +25,6 @@ class NewsTableViewCell: UITableViewCell {
                             News(nameImage: "news2"),
                             News(nameImage: "news1"),
                             News(nameImage: "news2")]
-
-    let cellDimension : CGFloat = 380
-    let spaceBetweenCells : CGFloat = 33
-    let numberOfColumns : CGFloat = 1
     
     var newsTableViewCellScreen: NewsTableViewCellScreen = NewsTableViewCellScreen()
     
@@ -57,25 +63,21 @@ extension NewsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
         return dataNews.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let width = self.frame.width
-        let expectUsedSize : CGFloat = (cellDimension * numberOfColumns) + spaceBetweenCells
-        let margins = (width - expectUsedSize) / numberOfColumns
-        return UIEdgeInsets(top: spaceBetweenCells, left: margins, bottom: spaceBetweenCells, right: margins)
-    }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: NewsCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCollectionViewCell.identifier, for: indexPath) as? NewsCollectionViewCell
         cell?.setupCell(data: dataNews[indexPath.row])
+        cell?.newsCollectionViewCellScreen.setUpDelegate(delegate: self)
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 158, height: 210)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("hello3")
-    }
 
+}
+
+extension NewsTableViewCell: NewsCollectionScreenDelegate {
+    func tappedButton() {
+        self.navigationNews?.didTapNewsButton(cell: self)
+    }
 }

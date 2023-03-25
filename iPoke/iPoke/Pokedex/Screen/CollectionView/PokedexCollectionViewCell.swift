@@ -32,8 +32,8 @@ class PokedexCollectionViewCell: UICollectionViewCell {
     }
     
     func addSubview() {
-//                typesCollectionViewCellScreen.layer.borderWidth = 1.0
-//                typesCollectionViewCellScreen.layer.borderColor = UIColor.white.cgColor
+//        pokedexCollectionViewCellScreen.layer.borderWidth = 3.0
+//        pokedexCollectionViewCellScreen.layer.borderColor = UIColor.orange.cgColor
         pokedexCollectionViewCellScreen.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(pokedexCollectionViewCellScreen)
     }

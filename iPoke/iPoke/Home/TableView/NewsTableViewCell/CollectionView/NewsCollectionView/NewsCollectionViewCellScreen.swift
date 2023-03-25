@@ -7,11 +7,22 @@
 
 import UIKit
 
+protocol NewsCollectionScreenDelegate: AnyObject {
+    func tappedButton()
+}
+
 class NewsCollectionViewCellScreen: UIView {
+    
+    weak private var delegate: NewsCollectionScreenDelegate?
+    
+    public func setUpDelegate(delegate: NewsCollectionScreenDelegate?) {
+        self.delegate = delegate
+    }
     
     lazy var newsImage: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tappedNewsButton), for: .touchUpInside)
         return button
     }()
     
@@ -23,6 +34,10 @@ class NewsCollectionViewCellScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func tappedNewsButton() {
+        self.delegate?.tappedButton()
     }
     
     func addSubview() {

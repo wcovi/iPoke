@@ -18,10 +18,6 @@ class FamousTableViewCell: UITableViewCell {
                                 Famous(nameType: "Pikachu", nameImage: "pikachuIcon"),
                                 Famous(nameType: "Squirtle", nameImage: "squirtleIcon"),
     ]
-
-    let cellDimension : CGFloat = 380
-    let spaceBetweenCells : CGFloat = 33
-    let numberOfColumns : CGFloat = 1
     
     var famousTableViewCellScreen: FamousTableViewCellScreen = FamousTableViewCellScreen()
     
@@ -58,13 +54,6 @@ extension FamousTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataFamous.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let width = self.frame.width
-        let expectUsedSize : CGFloat = (cellDimension * numberOfColumns) + spaceBetweenCells
-        let margins = (width - expectUsedSize) / numberOfColumns
-        return UIEdgeInsets(top: spaceBetweenCells, left: margins, bottom: spaceBetweenCells, right: margins)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

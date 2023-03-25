@@ -22,15 +22,16 @@ class BioScreen: UIView {
     lazy var fundoBioImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "fundoRed")
+        image.image = UIImage(named: "fundoHome")
         return image
     }()
     
-    lazy var informationBioImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "fundoTransparente")
-        return image
+    lazy var informationBioImageView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 40
+        view.backgroundColor = UIColor(red: 61/255.0, green: 61/255.0, blue: 69/255.0, alpha: 1.0)
+        return view
     }()
     
     lazy var titleNamePokeBio: UILabel = {
@@ -76,8 +77,8 @@ class BioScreen: UIView {
         button.setTitle("Fire", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        button.backgroundColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         button.layer.cornerRadius = 15
-        button.backgroundColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
         return button
     }()
     
@@ -87,9 +88,8 @@ class BioScreen: UIView {
         button.setTitle("Flying", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        button.backgroundColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         button.layer.cornerRadius = 15
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0).cgColor
         return button
     }()
     
@@ -109,8 +109,8 @@ class BioScreen: UIView {
         button.setTitle("Status", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .bold)
+        button.backgroundColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         button.layer.cornerRadius = 15
-        button.backgroundColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
         return button
     }()
     
@@ -118,11 +118,12 @@ class BioScreen: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Evolutions", for: .normal)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .bold)
         button.layer.cornerRadius = 15
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0).cgColor
+        button.backgroundColor = .white
+        button.layer.borderWidth = 2
+        button.layer.borderColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0).cgColor
         return button
     }()
     
@@ -130,11 +131,12 @@ class BioScreen: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Moves", for: .normal)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 13, weight: .bold)
         button.layer.cornerRadius = 15
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0).cgColor
+        button.backgroundColor = .white
+        button.layer.borderWidth = 2
+        button.layer.borderColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0).cgColor
         return button
     }()
     
@@ -252,9 +254,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.4
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -264,9 +266,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.8
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -276,9 +278,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.7
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -288,9 +290,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.9
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -300,9 +302,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.5
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -312,9 +314,9 @@ class BioScreen: UIView {
         progress.backgroundColor = .white
         progress.layer.cornerRadius = 8
         progress.layer.borderWidth = 1
-        progress.layer.borderColor = UIColor.white.cgColor
+        progress.layer.borderColor = UIColor.lightGray.cgColor
         progress.progress = 0.7
-        progress.progressTintColor = UIColor(red: 234/255.0, green: 67/255.0, blue: 53/255.0, alpha: 1.0)
+        progress.progressTintColor = UIColor(red: 31/255.0, green: 31/255.0, blue: 42/255.0, alpha: 1.0)
         return progress
     }()
     
@@ -369,7 +371,7 @@ class BioScreen: UIView {
             fundoBioImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             fundoBioImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            informationBioImageView.topAnchor.constraint(equalTo: topAnchor, constant: 269),
+            informationBioImageView.topAnchor.constraint(equalTo: topAnchor, constant: 280),
             informationBioImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             informationBioImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             informationBioImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -386,17 +388,17 @@ class BioScreen: UIView {
             buttonFavotire.heightAnchor.constraint(equalToConstant: 24),
             buttonFavotire.widthAnchor.constraint(equalToConstant: 24),
             
-            pokemonImageView.topAnchor.constraint(equalTo: informationBioImageView.topAnchor, constant: -153),
+            pokemonImageView.topAnchor.constraint(equalTo: topAnchor, constant: 100),
             pokemonImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             pokemonImageView.widthAnchor.constraint(equalToConstant: 250),
             pokemonImageView.heightAnchor.constraint(equalToConstant: 250),
             
-            buttonPrimaryType.topAnchor.constraint(equalTo: informationBioImageView.topAnchor, constant: 68),
+            buttonPrimaryType.topAnchor.constraint(equalTo: informationBioImageView.topAnchor, constant: 50),
             buttonPrimaryType.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -60),
             buttonPrimaryType.heightAnchor.constraint(equalToConstant: 34),
             buttonPrimaryType.widthAnchor.constraint(equalToConstant: 90),
             
-            buttonSecondType.topAnchor.constraint(equalTo: informationBioImageView.topAnchor, constant: 68),
+            buttonSecondType.topAnchor.constraint(equalTo: informationBioImageView.topAnchor, constant: 50),
             buttonSecondType.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 60),
             buttonSecondType.heightAnchor.constraint(equalToConstant: 34),
             buttonSecondType.widthAnchor.constraint(equalToConstant: 90),

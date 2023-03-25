@@ -1,34 +1,22 @@
 //
-//  PokedexViewController.swift
+//  FavoriteViewController.swift
 //  iPoke
 //
-//  Created by Yan Alejandro on 21/03/23.
+//  Created by Yan Alejandro on 16/03/23.
 //
 
 import UIKit
 
-class PokedexViewController: UIViewController {
-
-    var pokedexScreen: PokedexScreen?
+class FavoriteViewController: UIViewController {
     
-    var dataPokedex: [Pokedex] = [Pokedex(nameLabel: "Bulbasaur", nameImage: "001", typeLabel: "Grass"),
-                                  Pokedex(nameLabel: "Ivysaur", nameImage: "002", typeLabel: "Grass"),
+    var favoriteScreen: FavoriteScreen?
+    
+    var dataPokedex: [Pokedex] = [
                                   Pokedex(nameLabel: "Venusaur", nameImage: "003", typeLabel: "Grass"),
-                                  Pokedex(nameLabel: "Charmander", nameImage: "004", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Charmeleon", nameImage: "005", typeLabel: "Fire"),
                                   Pokedex(nameLabel: "Charizard", nameImage: "006", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Squirtle", nameImage: "007", typeLabel: "Water"),
-                                  Pokedex(nameLabel: "Wartortle", nameImage: "008", typeLabel: "Water"),
                                   Pokedex(nameLabel: "Blastoise", nameImage: "009", typeLabel: "Water"),
-                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "001", typeLabel: "Grass"),
-                                  Pokedex(nameLabel: "Ivysaur", nameImage: "002", typeLabel: "Grass"),
-                                  Pokedex(nameLabel: "Venusaur", nameImage: "003", typeLabel: "Grass"),
                                   Pokedex(nameLabel: "Charmander", nameImage: "004", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Charmeleon", nameImage: "005", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Charizard", nameImage: "006", typeLabel: "Fire"),
                                   Pokedex(nameLabel: "Squirtle", nameImage: "007", typeLabel: "Water"),
-                                  Pokedex(nameLabel: "Wartortle", nameImage: "008", typeLabel: "Water"),
-                                  Pokedex(nameLabel: "Blastoise", nameImage: "009", typeLabel: "Water"),
 //                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "010", typeLabel: "Grass"),
 //                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "011", typeLabel: "Grass"),
 //                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "012", typeLabel: "Grass"),
@@ -46,26 +34,29 @@ class PokedexViewController: UIViewController {
     ]
     
     override func loadView() {
-        pokedexScreen = PokedexScreen()
-        view = pokedexScreen
+        favoriteScreen = FavoriteScreen()
+        view = favoriteScreen
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pokedexScreen?.delegate(delegate: self)
-        pokedexScreen?.configCollectionViewProtocol(delegate: self, dataSource: self)
+        self.view.backgroundColor = .orange
+        favoriteScreen?.configCollectionViewProtocol(delegate: self, dataSource: self)
 
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
 }
 
-extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension FavoriteViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         dataPokedex.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PokedexCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: PokedexCollectionViewCell.identifier, for: indexPath) as? PokedexCollectionViewCell
+        let cell: FavoriteCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: FavoriteCollectionViewCell.identifier, for: indexPath) as? FavoriteCollectionViewCell
         cell?.setupCell(data: dataPokedex[indexPath.row])
         cell?.backgroundColor = .white
         cell?.layer.cornerRadius = 15
@@ -80,11 +71,5 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
         let vc = BioViewController()
         navigationController?.pushViewController(vc, animated: true)
         
-    }
-}
-
-extension PokedexViewController: PokedexScreenDelegate {
-    func tappedBackButton() {
-        navigationController?.popViewController(animated: true)
     }
 }

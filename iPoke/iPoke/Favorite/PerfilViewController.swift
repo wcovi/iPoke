@@ -9,8 +9,5 @@ import UIKit
 
 class PerfilViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = .green
-    }
+    
 }

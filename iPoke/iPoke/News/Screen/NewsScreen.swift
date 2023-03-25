@@ -1,25 +1,25 @@
 //
-//  PokedexScreen.swift
+//  NewsScreen.swift
 //  iPoke
 //
-//  Created by Yan Alejandro on 21/03/23.
+//  Created by Yan Alejandro on 24/03/23.
 //
 
 import UIKit
 
-protocol PokedexScreenDelegate: AnyObject {
+protocol NewsScreenDelegate: AnyObject {
     func tappedBackButton()
 }
 
-class PokedexScreen: UIView {
+class NewsScreen: UIView {
     
-    private weak var delegate: PokedexScreenDelegate?
+    private weak var delegate: NewsScreenDelegate?
     
-    public func delegate(delegate: PokedexScreenDelegate?) {
+    public func delegate(delegate: NewsScreenDelegate?) {
         self.delegate = delegate
     }
     
-    lazy var fundoBioImageView: UIImageView = {
+    lazy var fundoNewsImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "fundoHome")
@@ -31,8 +31,21 @@ class PokedexScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "chevron.left"), for: .normal)
         button.tintColor = .white
-        button.addTarget(self, action: #selector(tappedBioBackButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tappedNewsBackButton), for: .touchUpInside)
         return button
+    }()
+    
+    @objc func tappedNewsBackButton() {
+        delegate?.tappedBackButton()
+    }
+    
+    lazy var titleNameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "News"
+        label.font = UIFont.boldSystemFont(ofSize: 22)
+        label.textColor = .white
+        return label
     }()
     
     lazy var collectionView: UICollectionView = {
@@ -41,7 +54,7 @@ class PokedexScreen: UIView {
         collection.delaysContentTouches = false
         collection.showsVerticalScrollIndicator = false
         collection.backgroundColor = .clear
-        collection.register(PokedexCollectionViewCell.self, forCellWithReuseIdentifier: PokedexCollectionViewCell.identifier)
+        collection.register(NewsPageCollectionViewCell.self, forCellWithReuseIdentifier: NewsPageCollectionViewCell.identifier)
         let layout :UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .vertical
         collection.setCollectionViewLayout(layout, animated: false)
@@ -52,27 +65,6 @@ class PokedexScreen: UIView {
         collectionView.delegate = delegate
         collectionView.dataSource = dataSource
     }
-    
-    @objc func tappedBioBackButton() {
-        delegate?.tappedBackButton()
-    }
-    
-    lazy var titleNameLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Pokédex"
-        label.font = UIFont.boldSystemFont(ofSize: 22)
-        label.textColor = .white
-        return label
-    }()
-    
-    lazy var filterButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setBackgroundImage(UIImage(systemName: "slider.horizontal.3"), for: .normal)
-        button.tintColor = .white
-        return button
-    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -81,10 +73,9 @@ class PokedexScreen: UIView {
     }
     
     func addSubview() {
-        addSubview(fundoBioImageView)
+        addSubview(fundoNewsImageView)
         addSubview(backButton)
         addSubview(titleNameLabel)
-        addSubview(filterButton)
         addSubview(collectionView)
     }
     
@@ -94,28 +85,21 @@ class PokedexScreen: UIView {
     
     func configConstraints() {
         NSLayoutConstraint.activate([
-            fundoBioImageView.topAnchor.constraint(equalTo: topAnchor),
-            fundoBioImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            fundoBioImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            fundoBioImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            fundoNewsImageView.topAnchor.constraint(equalTo: topAnchor),
+            fundoNewsImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            fundoNewsImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            fundoNewsImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             backButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
             backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
             
-            
             titleNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 65),
             titleNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            
-            filterButton.topAnchor.constraint(equalTo: topAnchor, constant: 65),
-            filterButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
-            filterButton.heightAnchor.constraint(equalToConstant: 24),
-            filterButton.widthAnchor.constraint(equalToConstant: 24),
             
             collectionView.topAnchor.constraint(equalTo: titleNameLabel.bottomAnchor, constant: 40),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
         ])
     }
 }

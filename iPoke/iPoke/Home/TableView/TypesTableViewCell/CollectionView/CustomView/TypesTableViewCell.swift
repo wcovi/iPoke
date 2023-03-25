@@ -78,7 +78,7 @@ extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
-extension TypesTableViewCell: TypesScreenDelegate {
+extension TypesTableViewCell: TypesCollectionScreenDelegate {
     func tappedButton() {
         self.navigationCustom?.didTapButton(cell: self)
     }

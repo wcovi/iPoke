@@ -7,15 +7,15 @@
 
 import UIKit
 
-protocol TypesScreenDelegate: AnyObject {
+protocol TypesCollectionScreenDelegate: AnyObject {
     func tappedButton()
 }
 
 class TypesCollectionViewCellScreen: UIView {
     
-    weak private var delegate: TypesScreenDelegate?
+    weak private var delegate: TypesCollectionScreenDelegate?
     
-    public func setUpDelegate(delegate: TypesScreenDelegate?) {
+    public func setUpDelegate(delegate: TypesCollectionScreenDelegate?) {
         self.delegate = delegate
     }
 

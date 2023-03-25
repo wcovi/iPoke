@@ -1,13 +1,13 @@
 //
-//  PokedexCollectionViewCellScreen.swift
+//  FavoriteCollectionViewCellScreen.swift
 //  iPoke
 //
-//  Created by Yan Alejandro on 21/03/23.
+//  Created by Yan Alejandro on 25/03/23.
 //
 
 import UIKit
 
-class PokedexCollectionViewCellScreen: UIView {
+class FavoriteCollectionViewCellScreen: UIView {
 
     lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -28,7 +28,7 @@ class PokedexCollectionViewCellScreen: UIView {
     lazy var favoriteButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.setImage(UIImage(systemName: "heart.fill"), for: .normal)
         button.tintColor = .black
         return button
     }()
@@ -65,7 +65,7 @@ class PokedexCollectionViewCellScreen: UIView {
 
             pokemonImage.topAnchor.constraint(equalTo: topAnchor),
             pokemonImage.leadingAnchor.constraint(equalTo: leadingAnchor),
-            pokemonImage.trailingAnchor.constraint(equalTo: trailingAnchor), 
+            pokemonImage.trailingAnchor.constraint(equalTo: trailingAnchor),
             pokemonImage.heightAnchor.constraint(equalToConstant: 135),
             
             nameLabel.topAnchor.constraint(equalTo: pokemonImage.bottomAnchor, constant: 5),
@@ -85,4 +85,3 @@ class PokedexCollectionViewCellScreen: UIView {
         ])
     }
 }
- 
