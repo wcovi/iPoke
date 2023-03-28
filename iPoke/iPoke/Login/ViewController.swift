@@ -20,8 +20,10 @@ class ViewController: UIViewController {
 
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
-        let vc = ForgotPasswordViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        let storyboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
+        let controler = storyboard.instantiateViewController(withIdentifier: "ForgotPassword")
+        navigationController?.pushViewController(controler, animated: true)
+                                      
     }
     
     
