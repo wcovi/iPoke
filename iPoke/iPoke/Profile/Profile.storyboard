@@ -57,7 +57,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tom Cavalcante" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMT-Aw-zp5">
-                                <rect key="frame" x="70" y="427.33333333333331" width="103" height="18.666666666666686"/>
+                                <rect key="frame" x="70" y="427.33333333333331" width="316" height="18.666666666666686"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +78,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="tomrisadinha@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLE-tv-3Vx">
-                                <rect key="frame" x="70" y="503.33333333333326" width="163" height="18"/>
+                                <rect key="frame" x="70" y="503.33333333333326" width="316" height="18"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="************" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bth-kw-PMW">
-                                <rect key="frame" x="70" y="577" width="77.666666666666686" height="17"/>
+                                <rect key="frame" x="70" y="577" width="316" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="************" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toS-AA-hZu">
-                                <rect key="frame" x="70" y="652" width="77.666666666666686" height="17"/>
+                                <rect key="frame" x="70" y="652" width="316" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,6 +197,7 @@
                             <constraint firstItem="LPC-l0-0UP" firstAttribute="leading" secondItem="S0q-RI-IFN" secondAttribute="leading" id="9cq-yO-0sw"/>
                             <constraint firstItem="6OD-qA-gXw" firstAttribute="leading" secondItem="LPC-l0-0UP" secondAttribute="leading" id="Cjf-RL-T2B"/>
                             <constraint firstItem="7wQ-OM-rhw" firstAttribute="top" secondItem="kMT-Aw-zp5" secondAttribute="bottom" constant="15" id="DeT-bE-cOm"/>
+                            <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="kMT-Aw-zp5" secondAttribute="trailing" constant="44" id="DhD-Mr-Sax"/>
                             <constraint firstItem="emh-Iv-aFK" firstAttribute="leading" secondItem="PAj-B5-NMs" secondAttribute="leading" constant="44" id="DrB-xS-d83"/>
                             <constraint firstItem="Zda-Xl-r1F" firstAttribute="trailing" secondItem="7wQ-OM-rhw" secondAttribute="trailing" id="FlG-4l-aI1"/>
                             <constraint firstItem="S0q-RI-IFN" firstAttribute="top" secondItem="Bth-kw-PMW" secondAttribute="bottom" constant="15" id="HSm-gF-fOL"/>
@@ -209,6 +210,7 @@
                             <constraint firstItem="gLE-tv-3Vx" firstAttribute="top" secondItem="oWr-Qb-eEm" secondAttribute="bottom" constant="3" id="KZt-b2-2ak"/>
                             <constraint firstItem="GxL-KA-e10" firstAttribute="leading" secondItem="W1p-fx-A8p" secondAttribute="trailing" constant="8" id="KaF-fC-Lz9"/>
                             <constraint firstItem="Bth-kw-PMW" firstAttribute="top" secondItem="lmQ-Pp-Mqq" secondAttribute="bottom" constant="3" id="LGB-gi-ljD"/>
+                            <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="toS-AA-hZu" secondAttribute="trailing" constant="44" id="M3T-YE-P8h"/>
                             <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kMT-Aw-zp5" secondAttribute="trailing" symbolic="YES" id="O6z-0H-wbV"/>
                             <constraint firstItem="toS-AA-hZu" firstAttribute="leading" secondItem="lLe-Ja-goa" secondAttribute="leading" id="OZO-MJ-9PF"/>
                             <constraint firstItem="iZ0-3t-F5a" firstAttribute="top" secondItem="PAj-B5-NMs" secondAttribute="top" constant="60" id="PFV-3I-UDa"/>
@@ -246,10 +248,12 @@
                             <constraint firstItem="2ex-DD-k9w" firstAttribute="leading" secondItem="PAj-B5-NMs" secondAttribute="leading" constant="40" id="m6o-7u-oG9"/>
                             <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="toS-AA-hZu" secondAttribute="trailing" symbolic="YES" id="mDC-4M-FwY"/>
                             <constraint firstItem="uoF-Rg-wFB" firstAttribute="leading" secondItem="PAj-B5-NMs" secondAttribute="leading" id="oOR-Ms-RQU"/>
+                            <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="Bth-kw-PMW" secondAttribute="trailing" constant="44" id="pJb-ij-0Xe"/>
                             <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="Zh9-Z2-SN4" secondAttribute="trailing" constant="122" id="qlq-Do-Mv1"/>
                             <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="7wQ-OM-rhw" secondAttribute="trailing" constant="44" id="uTA-n2-77B"/>
                             <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gLE-tv-3Vx" secondAttribute="trailing" symbolic="YES" id="uYX-tv-69g"/>
                             <constraint firstItem="1Ng-1Y-chD" firstAttribute="leading" secondItem="S0q-RI-IFN" secondAttribute="leading" id="urZ-eO-GGr"/>
+                            <constraint firstItem="PAj-B5-NMs" firstAttribute="trailing" secondItem="gLE-tv-3Vx" secondAttribute="trailing" constant="44" id="vJz-EM-yha"/>
                             <constraint firstItem="Bth-kw-PMW" firstAttribute="leading" secondItem="lmQ-Pp-Mqq" secondAttribute="leading" id="wgb-CN-7ut"/>
                             <constraint firstItem="a0Z-7P-cPy" firstAttribute="leading" secondItem="PAj-B5-NMs" secondAttribute="leading" constant="44" id="xD8-Ty-piT"/>
                             <constraint firstItem="1Ng-1Y-chD" firstAttribute="top" secondItem="Zda-Xl-r1F" secondAttribute="bottom" constant="18" id="z3M-t5-Mso"/>
