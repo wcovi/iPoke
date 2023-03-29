@@ -32,5 +32,11 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func registerButton(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Register", bundle: nil)
+        let controler = storyboard.instantiateViewController(withIdentifier: "Register")
+        navigationController?.pushViewController(controler, animated: true)
+    }
 }
 
