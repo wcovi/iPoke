@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6318DD5229D3D58500092969 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6318DD5129D3D58500092969 /* Register.storyboard */; };
 		632E0AA829C0F1510097DF6D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */; };
 		632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */; };
+		6374B5A329D3B1F500463586 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6374B5A229D3B1F500463586 /* RegisterViewController.swift */; };
 		63D6692B29C004ED004689EA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6692A29C004ED004689EA /* ProfileViewController.swift */; };
 		63D6692D29C0052D004689EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D6692C29C0052D004689EA /* Profile.storyboard */; };
 		711B84B829C9F31F004EAA5D /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84B729C9F31F004EAA5D /* PokedexViewController.swift */; };
@@ -63,8 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6318DD5129D3D58500092969 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		6374B5A229D3B1F500463586 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63D6692A29C004ED004689EA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63D6692C29C0052D004689EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		711B84B729C9F31F004EAA5D /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,15 @@
 				632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		6374B59F29D3B1BB00463586 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				6374B5A229D3B1F500463586 /* RegisterViewController.swift */,
+				6318DD5129D3D58500092969 /* Register.storyboard */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		63D6692929C00476004689EA /* Profile */ = {
@@ -535,6 +548,7 @@
 				799DDCEF29C60C17001C0556 /* Login */,
 				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
+				6374B59F29D3B1BB00463586 /* Register */,
 				71995E2129C2E2C900EE4E94 /* TabBar */,
 				718D463C29B6A7A000A4429D /* Home */,
 				716F023529C9CE190078515D /* Bio */,
@@ -621,6 +635,7 @@
 			files = (
 				79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */,
 				79717D9B29B68E950061AEBC /* Assets.xcassets in Resources */,
+				6318DD5229D3D58500092969 /* Register.storyboard in Resources */,
 				632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */,
 				63D6692D29C0052D004689EA /* Profile.storyboard in Resources */,
 				711B852529CE89A2004EAA5D /* teste.storyboard in Resources */,
@@ -662,6 +677,7 @@
 				71B9D61C29B7D5F800641097 /* TypesCollectionViewCellScreen.swift in Sources */,
 				711B853D29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift in Sources */,
 				716F023929C9CE3F0078515D /* BioViewController.swift in Sources */,
+				6374B5A329D3B1F500463586 /* RegisterViewController.swift in Sources */,
 				71995E2829C2E42800EE4E94 /* PerfilViewController.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,
