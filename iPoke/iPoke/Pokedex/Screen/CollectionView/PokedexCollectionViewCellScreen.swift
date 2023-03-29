@@ -21,6 +21,7 @@ class PokedexCollectionViewCellScreen: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = UIColor(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+        image.contentMode = .scaleAspectFit
         image.layer.cornerRadius = 15
         return image
     }()
@@ -65,8 +66,8 @@ class PokedexCollectionViewCellScreen: UIView {
 
             pokemonImage.topAnchor.constraint(equalTo: topAnchor),
             pokemonImage.leadingAnchor.constraint(equalTo: leadingAnchor),
-            pokemonImage.trailingAnchor.constraint(equalTo: trailingAnchor), 
-            pokemonImage.heightAnchor.constraint(equalToConstant: 135),
+            pokemonImage.trailingAnchor.constraint(equalTo: trailingAnchor),
+            pokemonImage.bottomAnchor.constraint(equalTo: pokemonImage.topAnchor, constant: 135),
             
             nameLabel.topAnchor.constraint(equalTo: pokemonImage.bottomAnchor, constant: 5),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
@@ -76,6 +77,7 @@ class PokedexCollectionViewCellScreen: UIView {
             favoriteButton.heightAnchor.constraint(equalToConstant: 20),
             favoriteButton.widthAnchor.constraint(equalToConstant: 20),
             
+            typeButton.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 12),
             typeButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             typeButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             typeButton.widthAnchor.constraint(equalToConstant: 60),

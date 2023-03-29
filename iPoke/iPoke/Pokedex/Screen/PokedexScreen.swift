@@ -102,11 +102,10 @@ class PokedexScreen: UIView {
             backButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
             backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
             
-            
-            titleNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 65),
+            titleNameLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
             titleNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            filterButton.topAnchor.constraint(equalTo: topAnchor, constant: 65),
+            filterButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
             filterButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
             filterButton.heightAnchor.constraint(equalToConstant: 24),
             filterButton.widthAnchor.constraint(equalToConstant: 24),

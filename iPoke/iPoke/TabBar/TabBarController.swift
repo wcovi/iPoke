@@ -23,9 +23,12 @@ class TabBarController: UITabBarController {
     
     private func setupTabBarController() {
         
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let controler = storyboard.instantiateViewController(withIdentifier: "Profile")
+        
         let homeVC = UINavigationController(rootViewController: HomeViewController())
         let favoriteVC = UINavigationController(rootViewController: FavoriteViewController())
-        let profileVC = UINavigationController(rootViewController: BioViewController())
+        let profileVC = UINavigationController(rootViewController: controler)
         
         self.setViewControllers([homeVC, favoriteVC, profileVC], animated: false)
         

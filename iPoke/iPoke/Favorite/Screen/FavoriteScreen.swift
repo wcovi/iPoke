@@ -66,7 +66,7 @@ class FavoriteScreen: UIView {
             fundoBioImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             fundoBioImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            titleNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 65),
+            titleNameLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
             titleNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             collectionView.topAnchor.constraint(equalTo: titleNameLabel.bottomAnchor, constant: 40),

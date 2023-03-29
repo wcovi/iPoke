@@ -376,7 +376,7 @@ class BioScreen: UIView {
             informationBioImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             informationBioImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            titleNamePokeBio.topAnchor.constraint(equalTo: topAnchor, constant: 65),
+            titleNamePokeBio.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
             titleNamePokeBio.centerXAnchor.constraint(equalTo: centerXAnchor),
             
 //            backButton.centerYAnchor.constraint(equalTo: titleNamePokeBio.centerYAnchor),

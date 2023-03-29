@@ -93,7 +93,7 @@ class NewsScreen: UIView {
             backButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
             backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
             
-            titleNameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 65),
+            titleNameLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
             titleNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             collectionView.topAnchor.constraint(equalTo: titleNameLabel.bottomAnchor, constant: 40),

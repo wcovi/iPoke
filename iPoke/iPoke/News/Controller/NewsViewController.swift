@@ -46,13 +46,15 @@ extension NewsViewController:  UICollectionViewDelegate, UICollectionViewDataSou
         
         let cell: NewsPageCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: NewsPageCollectionViewCell.identifier, for: indexPath) as? NewsPageCollectionViewCell
         cell?.setupCell(data: dataNews[indexPath.row])
-        cell?.layer.borderWidth = 2
-        cell?.layer.borderColor = UIColor.white.cgColor
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
 }
 
