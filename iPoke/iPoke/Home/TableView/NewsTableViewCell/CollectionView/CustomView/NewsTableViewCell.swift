@@ -71,7 +71,7 @@ extension NewsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 158, height: 210)
+        return CGSize(width: self.frame.width * 0.355, height: 200)
     }
 
 }

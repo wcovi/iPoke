@@ -135,9 +135,9 @@ class HomeScreen: UIView {
             fundoHomeImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             fundoHomeImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            viewFundoHome.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-            viewFundoHome.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-            viewFundoHome.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+            viewFundoHome.topAnchor.constraint(equalTo: topAnchor),
+            viewFundoHome.leadingAnchor.constraint(equalTo: leadingAnchor),
+            viewFundoHome.trailingAnchor.constraint(equalTo: trailingAnchor),
             viewFundoHome.heightAnchor.constraint(equalToConstant: 300),
             
             fundoHomePokebolaImageView.topAnchor.constraint(equalTo: topAnchor, constant: 31),

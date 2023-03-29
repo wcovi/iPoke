@@ -18,6 +18,7 @@ class TypesTableViewCellScreen: UIView {
         collection.register(TypesCollectionViewCell.self, forCellWithReuseIdentifier: TypesCollectionViewCell.identifier)
         let layout :UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         collection.setCollectionViewLayout(layout, animated: false)
         return collection
     }()

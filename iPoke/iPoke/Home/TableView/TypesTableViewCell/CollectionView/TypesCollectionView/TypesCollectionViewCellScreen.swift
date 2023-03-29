@@ -23,6 +23,7 @@ class TypesCollectionViewCellScreen: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Pokedéx", for: .normal)
+        button.contentHorizontalAlignment = .center
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.addTarget(self, action: #selector(tappedPokedexButton), for: .touchUpInside)

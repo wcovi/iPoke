@@ -388,7 +388,7 @@ class BioScreen: UIView {
             buttonFavotire.heightAnchor.constraint(equalToConstant: 24),
             buttonFavotire.widthAnchor.constraint(equalToConstant: 24),
             
-            pokemonImageView.topAnchor.constraint(equalTo: topAnchor, constant: 100),
+            pokemonImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -180),
             pokemonImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             pokemonImageView.widthAnchor.constraint(equalToConstant: 250),
             pokemonImageView.heightAnchor.constraint(equalToConstant: 250),

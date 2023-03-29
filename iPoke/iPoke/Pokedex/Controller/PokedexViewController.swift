@@ -80,6 +80,8 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = BioViewController()
         navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
 }
 
