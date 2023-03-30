@@ -8,7 +8,5 @@
 import Foundation
 
 struct Types {
-    var nameType: String
     var nameImage: String
-    var pokeImage: String
 }

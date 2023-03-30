@@ -63,12 +63,12 @@ class NewsPageCollectionViewCellScreen: UIView {
         NSLayoutConstraint.activate([
             
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             nameLabel.trailingAnchor.constraint(equalTo: videoNewsImage.leadingAnchor, constant: -20),
             nameLabel.heightAnchor.constraint(equalToConstant: 16),
             
             dateLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
-            dateLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
+            dateLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             dateLabel.heightAnchor.constraint(equalToConstant: 16),
             dateLabel.widthAnchor.constraint(equalToConstant: 70),
             
@@ -78,7 +78,7 @@ class NewsPageCollectionViewCellScreen: UIView {
             timeLabel.widthAnchor.constraint(equalToConstant: 100),
 
             videoNewsImage.centerYAnchor.constraint(equalTo: centerYAnchor),
-            videoNewsImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
+            videoNewsImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             videoNewsImage.heightAnchor.constraint(equalToConstant: 80),
             videoNewsImage.widthAnchor.constraint(equalToConstant: 80),
         ])

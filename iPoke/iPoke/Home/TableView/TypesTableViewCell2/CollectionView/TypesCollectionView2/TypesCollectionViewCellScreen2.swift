@@ -7,13 +7,28 @@
 
 import UIKit
 
+protocol TypesCollectionScreenDelegate2: AnyObject {
+    func tappedButton()
+}
+
 class TypesCollectionViewCellScreen2: UIView {
+    
+    weak private var delegate: TypesCollectionScreenDelegate2?
+    
+    public func setUpDelegate(delegate: TypesCollectionScreenDelegate2?) {
+        self.delegate = delegate
+    }
 
     lazy var typePokemonButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tappedPokedexButton), for: .touchUpInside)
         return button
     }()
+    
+    @objc func tappedPokedexButton() {
+        self.delegate?.tappedButton()
+    }
     
     lazy var typeLabel: UILabel = {
         let label = UILabel()

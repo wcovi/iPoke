@@ -7,16 +7,27 @@
 
 import UIKit
 
-class TypesTableViewCell2: UITableViewCell {
+protocol NagivationCustom2: AnyObject {
+    func didTapButton2(cell: UITableViewCell)
+}
 
-    var dataType: [Types] = [Types(nameType: "Água", nameImage: "blueCard", pokeImage: "pokebola"),
-                             Types(nameType: "Grama", nameImage: "greenCard", pokeImage: "pokebola"),
-                             Types(nameType: "Elétrico", nameImage: "yellowCard", pokeImage: "pokebola"),
-                             Types(nameType: "Fogo", nameImage: "redCard", pokeImage: "pokebola"),
-                             Types(nameType: "Água", nameImage: "blueCard", pokeImage: "pokebola"),
-                             Types(nameType: "Grama", nameImage: "greenCard", pokeImage: "pokebola"),
-                             Types(nameType: "Elétrico", nameImage: "yellowCard", pokeImage: "pokebola"),
-                             Types(nameType: "Fogo", nameImage: "redCard", pokeImage: "pokebola"),
+class TypesTableViewCell2: UITableViewCell {
+    
+    private weak var navigationCustom2: NagivationCustom2?
+    
+    public func navigationDelegate(delegate: NagivationCustom2) {
+        self.navigationCustom2 = delegate
+    }
+    
+    var dataType: [Types] = [Types(nameImage: "iceButton"),
+                             Types(nameImage: "ghostButton"),
+                             Types(nameImage: "fairyButton"),
+                             Types(nameImage: "darkButton"),
+                             Types(nameImage: "dragonButton"),
+                             Types(nameImage: "steelButton"),
+                             Types(nameImage: "bugButton"),
+                             Types(nameImage: "psychicButton"),
+                             Types(nameImage: "rockButton"),
     ]
     
     var typesTableViewCellScreen2: TypesTableViewCellScreen2 = TypesTableViewCellScreen2()
@@ -59,15 +70,18 @@ extension TypesTableViewCell2: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TypesCollectionViewCell2? = collectionView.dequeueReusableCell(withReuseIdentifier: TypesCollectionViewCell2.identifier, for: indexPath) as? TypesCollectionViewCell2
         cell?.setupCell(data: dataType[indexPath.row])
+        cell?.typesCollectionViewCellScreen2.setUpDelegate(delegate: self)
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 57)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("hello1")
-    }
 
+}
+
+extension TypesTableViewCell2: TypesCollectionScreenDelegate2 {
+    func tappedButton() {
+        self.navigationCustom2?.didTapButton2(cell: self)
+    }
 }

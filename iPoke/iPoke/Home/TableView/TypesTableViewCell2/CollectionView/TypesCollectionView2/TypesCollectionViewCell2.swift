@@ -22,7 +22,6 @@ class TypesCollectionViewCell2: UICollectionViewCell {
     
     public func setupCell(data: Types) {
         typesCollectionViewCellScreen2.typePokemonButton.setImage(UIImage(named: data.nameImage), for: .normal)
-        typesCollectionViewCellScreen2.typeLabel.text = data.nameType
     }
     
     required init?(coder: NSCoder) {

@@ -22,13 +22,13 @@ class TypesCollectionViewCellScreen: UIView {
     lazy var typePokemonButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Pokedéx", for: .normal)
-        button.contentHorizontalAlignment = .center
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.addTarget(self, action: #selector(tappedPokedexButton), for: .touchUpInside)
         return button
     }()
+    
+    @objc func tappedPokedexButton() {
+        self.delegate?.tappedButton()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,10 +38,6 @@ class TypesCollectionViewCellScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    @objc func tappedPokedexButton() {
-        self.delegate?.tappedButton()
     }
     
     func addSubview() {

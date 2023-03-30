@@ -54,7 +54,6 @@ class PokedexViewController: UIViewController {
         super.viewDidLoad()
         pokedexScreen?.delegate(delegate: self)
         pokedexScreen?.configCollectionViewProtocol(delegate: self, dataSource: self)
-
     }
     
 }
