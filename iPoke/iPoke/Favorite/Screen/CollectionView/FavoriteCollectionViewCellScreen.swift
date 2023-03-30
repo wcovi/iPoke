@@ -81,7 +81,6 @@ class FavoriteCollectionViewCellScreen: UIView {
             typeButton.widthAnchor.constraint(equalToConstant: 60),
             typeButton.heightAnchor.constraint(equalToConstant: 20),
             
-            
         ])
     }
 }

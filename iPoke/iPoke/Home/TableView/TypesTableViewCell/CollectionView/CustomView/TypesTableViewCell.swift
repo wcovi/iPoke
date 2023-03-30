@@ -23,10 +23,6 @@ class TypesTableViewCell: UITableViewCell {
                              Types(nameType: "Pokedex", nameImage: "yellowCard", pokeImage: "pokebola"),
                              Types(nameType: "Grama", nameImage: "greenCard", pokeImage: "pokebola"),
                              Types(nameType: "Água", nameImage: "blueCard", pokeImage: "pokebola"),
-                             Types(nameType: "Fogo", nameImage: "redCard", pokeImage: "pokebola"),
-                             Types(nameType: "Pokedex", nameImage: "yellowCard", pokeImage: "pokebola"),
-                             Types(nameType: "Grama", nameImage: "greenCard", pokeImage: "pokebola"),
-                             Types(nameType: "Água", nameImage: "blueCard", pokeImage: "pokebola"),
     ]
     
     var typesTableViewCellScreen: TypesTableViewCellScreen = TypesTableViewCellScreen()

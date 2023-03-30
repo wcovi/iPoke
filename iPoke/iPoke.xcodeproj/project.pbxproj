@@ -28,6 +28,8 @@
 		711B853D29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B853C29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift */; };
 		711B853F29CEFBE8004EAA5D /* FavoriteCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B853E29CEFBE8004EAA5D /* FavoriteCollectionViewCellScreen.swift */; };
 		7132714A29C428A300C1A2AA /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7132714929C428A300C1A2AA /* FavoriteScreen.swift */; };
+		71391EF429D49F8100AFA507 /* BioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71391EF329D49F8100AFA507 /* BioCollectionViewCell.swift */; };
+		71391EF629D49FE400AFA507 /* BioCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71391EF529D49FE400AFA507 /* BioCollectionViewCellScreen.swift */; };
 		713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */; };
 		713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE229B6CE8000A7AEB1 /* UITextField.swift */; };
 		713AFBE829B6CFF200A7AEB1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE729B6CFF200A7AEB1 /* Types.swift */; };
@@ -86,6 +88,8 @@
 		711B853C29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		711B853E29CEFBE8004EAA5D /* FavoriteCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		7132714929C428A300C1A2AA /* FavoriteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreen.swift; sourceTree = "<group>"; };
+		71391EF329D49F8100AFA507 /* BioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCollectionViewCell.swift; sourceTree = "<group>"; };
+		71391EF529D49FE400AFA507 /* BioCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		713AFBE229B6CE8000A7AEB1 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		713AFBE729B6CFF200A7AEB1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
@@ -285,6 +289,15 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		71391EF029D49F3300AFA507 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				71391EF529D49FE400AFA507 /* BioCollectionViewCellScreen.swift */,
+				71391EF329D49F8100AFA507 /* BioCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		713AFBE129B6CE5E00A7AEB1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +346,7 @@
 		716F023A29C9CE670078515D /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				71391EF029D49F3300AFA507 /* CollectionView */,
 				716F023629C9CE2F0078515D /* BioScreen.swift */,
 			);
 			path = Screen;
@@ -657,6 +671,7 @@
 				71B9D62329B7DC9B00641097 /* Famous.swift in Sources */,
 				79717D9429B68E930061AEBC /* SceneDelegate.swift in Sources */,
 				71995E3829C33DE500EE4E94 /* NewsTableViewCell.swift in Sources */,
+				71391EF629D49FE400AFA507 /* BioCollectionViewCellScreen.swift in Sources */,
 				71995E2C29C2E71700EE4E94 /* FamousTableViewCell.swift in Sources */,
 				711B84C429CA4292004EAA5D /* PokedexCollectionViewCellScreen.swift in Sources */,
 				71995E3629C3042700EE4E94 /* NewsTableViewCellScreen.swift in Sources */,
@@ -678,6 +693,7 @@
 				711B853D29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift in Sources */,
 				716F023929C9CE3F0078515D /* BioViewController.swift in Sources */,
 				6374B5A329D3B1F500463586 /* RegisterViewController.swift in Sources */,
+				71391EF429D49F8100AFA507 /* BioCollectionViewCell.swift in Sources */,
 				71995E2829C2E42800EE4E94 /* PerfilViewController.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,
