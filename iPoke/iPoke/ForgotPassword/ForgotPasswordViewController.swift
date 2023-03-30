@@ -16,7 +16,10 @@ class ForgotPasswordViewController: UIViewController {
 
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+            self.navigationController?.setNavigationBarHidden(true, animated: false)
+        }
+    
     @IBAction func backButton(_ sender: Any) {
         
         navigationController?.popViewController(animated: true)
