@@ -19,10 +19,17 @@ class TypesTableViewCell: UITableViewCell {
         self.navigationCustom = delegate
     }
     
-    var dataType: [Types] = [Types(nameType: "Fogo", nameImage: "redCard", pokeImage: "pokebola"),
-                             Types(nameType: "Pokedex", nameImage: "yellowCard", pokeImage: "pokebola"),
-                             Types(nameType: "Grama", nameImage: "greenCard", pokeImage: "pokebola"),
-                             Types(nameType: "Água", nameImage: "blueCard", pokeImage: "pokebola"),
+    var dataType: [Types] = [Types(nameImage: "pokedex"),
+                             Types(nameImage: "fireButton"),
+                             Types(nameImage: "waterButton"),
+                             Types(nameImage: "grassButton"),
+                             Types(nameImage: "flyingButton"),
+                             Types(nameImage: "fightingButton"),
+                             Types(nameImage: "poisonButton"),
+                             Types(nameImage: "electricButton"),
+                             Types(nameImage: "groundButton"),
+                             Types(nameImage: "normalButton"),
+
     ]
     
     var typesTableViewCellScreen: TypesTableViewCellScreen = TypesTableViewCellScreen()
@@ -70,8 +77,9 @@ extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.frame.width * 0.44, height: 57)
+        return CGSize(width: 165, height: 57)
     }
+
 }
 
 extension TypesTableViewCell: TypesCollectionScreenDelegate {

@@ -9,14 +9,15 @@ import UIKit
 
 class FamousTableViewCell: UITableViewCell {
 
-    var dataFamous: [Famous] = [Famous(nameType: "Charmander", nameImage:                                "charmanderIcon"),
-                                Famous(nameType: "Bulbasaur", nameImage: "bulbasaurIcon"),
-                                Famous(nameType: "Pikachu", nameImage: "pikachuIcon"),
-                                Famous(nameType: "Squirtle", nameImage: "squirtleIcon"),
-                                Famous(nameType: "Charmander", nameImage: "charmanderIcon"),
-                                Famous(nameType: "Bulbasaur", nameImage: "bulbasaurIcon"),
-                                Famous(nameType: "Pikachu", nameImage: "pikachuIcon"),
-                                Famous(nameType: "Squirtle", nameImage: "squirtleIcon"),
+    var dataFamous: [Famous] = [Famous(nameType: "1º Gen", nameImage: "charmanderIcon"),
+                                Famous(nameType: "2º Gen", nameImage: "bulbasaurIcon"),
+                                Famous(nameType: "3º Gen", nameImage: "pikachuIcon"),
+                                Famous(nameType: "4º Gen", nameImage: "squirtleIcon"),
+                                Famous(nameType: "5º Gen", nameImage: "charmanderIcon"),
+                                Famous(nameType: "6º Gen", nameImage: "bulbasaurIcon"),
+                                Famous(nameType: "7º Gen", nameImage: "pikachuIcon"),
+                                Famous(nameType: "8º Gen", nameImage: "squirtleIcon"),
+                                Famous(nameType: "9º Gen", nameImage: "charmanderIcon"),
     ]
     
     var famousTableViewCellScreen: FamousTableViewCellScreen = FamousTableViewCellScreen()
