@@ -15,11 +15,9 @@
 		63D6692D29C0052D004689EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D6692C29C0052D004689EA /* Profile.storyboard */; };
 		711B84B829C9F31F004EAA5D /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84B729C9F31F004EAA5D /* PokedexViewController.swift */; };
 		711B84BA29C9F336004EAA5D /* PokedexScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84B929C9F336004EAA5D /* PokedexScreen.swift */; };
-		711B84BF29CA3DAA004EAA5D /* Teste1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84BE29CA3DAA004EAA5D /* Teste1ViewController.swift */; };
 		711B84C229CA4285004EAA5D /* PokedexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84C129CA4285004EAA5D /* PokedexCollectionViewCell.swift */; };
 		711B84C429CA4292004EAA5D /* PokedexCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84C329CA4292004EAA5D /* PokedexCollectionViewCellScreen.swift */; };
 		711B84C629CA43D5004EAA5D /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B84C529CA43D5004EAA5D /* Pokedex.swift */; };
-		711B852529CE89A2004EAA5D /* teste.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 711B852429CE89A2004EAA5D /* teste.storyboard */; };
 		711B852B29CE9794004EAA5D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B852A29CE9794004EAA5D /* NewsViewController.swift */; };
 		711B852D29CE97AD004EAA5D /* NewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B852C29CE97AD004EAA5D /* NewsScreen.swift */; };
 		711B852F29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B852E29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift */; };
@@ -75,11 +73,9 @@
 		63D6692C29C0052D004689EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		711B84B729C9F31F004EAA5D /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		711B84B929C9F336004EAA5D /* PokedexScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexScreen.swift; sourceTree = "<group>"; };
-		711B84BE29CA3DAA004EAA5D /* Teste1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste1ViewController.swift; sourceTree = "<group>"; };
 		711B84C129CA4285004EAA5D /* PokedexCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCollectionViewCell.swift; sourceTree = "<group>"; };
 		711B84C329CA4292004EAA5D /* PokedexCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		711B84C529CA43D5004EAA5D /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
-		711B852429CE89A2004EAA5D /* teste.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = teste.storyboard; sourceTree = "<group>"; };
 		711B852A29CE9794004EAA5D /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		711B852C29CE97AD004EAA5D /* NewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsScreen.swift; sourceTree = "<group>"; };
 		711B852E29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -191,15 +187,6 @@
 				711B84B929C9F336004EAA5D /* PokedexScreen.swift */,
 			);
 			path = Screen;
-			sourceTree = "<group>";
-		};
-		711B84BD29CA3D86004EAA5D /* Teste */ = {
-			isa = PBXGroup;
-			children = (
-				711B84BE29CA3DAA004EAA5D /* Teste1ViewController.swift */,
-				711B852429CE89A2004EAA5D /* teste.storyboard */,
-			);
-			path = Teste;
 			sourceTree = "<group>";
 		};
 		711B84C029CA4251004EAA5D /* CollectionView */ = {
@@ -566,7 +553,6 @@
 				71995E2129C2E2C900EE4E94 /* TabBar */,
 				718D463C29B6A7A000A4429D /* Home */,
 				716F023529C9CE190078515D /* Bio */,
-				711B84BD29CA3D86004EAA5D /* Teste */,
 				711B84B629C9F300004EAA5D /* Pokedex */,
 				71995E2429C2E33100EE4E94 /* Favorite */,
 				63D6692929C00476004689EA /* Profile */,
@@ -652,7 +638,6 @@
 				6318DD5229D3D58500092969 /* Register.storyboard in Resources */,
 				632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */,
 				63D6692D29C0052D004689EA /* Profile.storyboard in Resources */,
-				711B852529CE89A2004EAA5D /* teste.storyboard in Resources */,
 				79717D9929B68E930061AEBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,7 +692,6 @@
 				711B84C629CA43D5004EAA5D /* Pokedex.swift in Sources */,
 				71995E3429C303FF00EE4E94 /* NewsCollectionViewCell.swift in Sources */,
 				711B853129CE97D8004EAA5D /* NewsPageCollectionViewCellScreen.swift in Sources */,
-				711B84BF29CA3DAA004EAA5D /* Teste1ViewController.swift in Sources */,
 				711B853A29CEE3CE004EAA5D /* NewsModel.swift in Sources */,
 				71995E2629C2E35B00EE4E94 /* FavoriteViewController.swift in Sources */,
 				713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */,

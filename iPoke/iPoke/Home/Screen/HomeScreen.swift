@@ -50,7 +50,7 @@ class HomeScreen: UIView {
     lazy var labelSubTitle: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Which pokemon would you like to research?"
+        label.text = "Which pokemon would you like to search?"
         label.numberOfLines = 0
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.textColor = .white
@@ -86,7 +86,7 @@ class HomeScreen: UIView {
     lazy var labelSecsion1: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Pokémons mais famosos"
+        label.text = "Most famous Pokémons"
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.textColor = .white
         return label
