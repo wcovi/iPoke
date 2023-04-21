@@ -8,14 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-    @IBOutlet weak var forgotPasswordButton: UIButton!
-    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        loginButton.isEnabled = false
     }
 
     
@@ -40,3 +42,23 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.blue.cgColor    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.hasText == false {
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor.red.cgColor
+        } else {
+        textField.layer.borderWidth = 0
+        }
+        if emailTextField.hasText && passwordTextField.hasText {
+            loginButton.isEnabled = true
+        } else {
+            loginButton.isEnabled = false
+        }
+    }
+    
+}
