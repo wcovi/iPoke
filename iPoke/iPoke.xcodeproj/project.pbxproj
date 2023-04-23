@@ -62,6 +62,8 @@
 		79717D9929B68E930061AEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9729B68E930061AEBC /* Main.storyboard */; };
 		79717D9B29B68E950061AEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9A29B68E950061AEBC /* Assets.xcassets */; };
 		79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */; };
+		798F005329F4BD450057AB6E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005229F4BD450057AB6E /* Login.swift */; };
+		798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005429F4BD5B0057AB6E /* ForgotPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +124,8 @@
 		79717D9A29B68E950061AEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79717D9D29B68E950061AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79717D9F29B68E950061AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798F005229F4BD450057AB6E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		798F005429F4BD5B0057AB6E /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +142,8 @@
 		632E0AA629C0F1330097DF6D /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */,
-				632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */,
+				798F005029F4BBC50057AB6E /* View */,
+				798F005129F4BBCE0057AB6E /* ViewModel */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -546,9 +550,10 @@
 		79717D9029B68E930061AEBC /* iPoke */ = {
 			isa = PBXGroup;
 			children = (
+				798F004D29F4BB840057AB6E /* Resources */,
 				799DDCEF29C60C17001C0556 /* Login */,
-				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
+				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
 				6374B59F29D3B1BB00463586 /* Register */,
 				71995E2129C2E2C900EE4E94 /* TabBar */,
 				718D463C29B6A7A000A4429D /* Home */,
@@ -557,20 +562,61 @@
 				71995E2429C2E33100EE4E94 /* Favorite */,
 				63D6692929C00476004689EA /* Profile */,
 				711B852629CE9741004EAA5D /* News */,
-				79717D9129B68E930061AEBC /* AppDelegate.swift */,
-				79717D9329B68E930061AEBC /* SceneDelegate.swift */,
-				79717D9A29B68E950061AEBC /* Assets.xcassets */,
-				79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */,
 				79717D9F29B68E950061AEBC /* Info.plist */,
 			);
 			path = iPoke;
 			sourceTree = "<group>";
 		};
-		799DDCEF29C60C17001C0556 /* Login */ = {
+		798F004D29F4BB840057AB6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79717D9129B68E930061AEBC /* AppDelegate.swift */,
+				79717D9329B68E930061AEBC /* SceneDelegate.swift */,
+				79717D9A29B68E950061AEBC /* Assets.xcassets */,
+				79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		798F004E29F4BB950057AB6E /* View */ = {
 			isa = PBXGroup;
 			children = (
 				79717D9529B68E930061AEBC /* ViewController.swift */,
 				79717D9729B68E930061AEBC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		798F004F29F4BB9E0057AB6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				798F005229F4BD450057AB6E /* Login.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		798F005029F4BBC50057AB6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */,
+				632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		798F005129F4BBCE0057AB6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				798F005429F4BD5B0057AB6E /* ForgotPassword.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		799DDCEF29C60C17001C0556 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				798F004E29F4BB950057AB6E /* View */,
+				798F004F29F4BB9E0057AB6E /* ViewModel */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -670,6 +716,7 @@
 				71995E2A29C2E6F200EE4E94 /* FamousTableViewCellScreen.swift in Sources */,
 				71B9D61F29B7DC6C00641097 /* FamousCollectionViewCellScreen.swift in Sources */,
 				711B852F29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift in Sources */,
+				798F005329F4BD450057AB6E /* Login.swift in Sources */,
 				71B9D61A29B7D5D700641097 /* TypesCollectionViewCell.swift in Sources */,
 				7132714A29C428A300C1A2AA /* FavoriteScreen.swift in Sources */,
 				711B84C229CA4285004EAA5D /* PokedexCollectionViewCell.swift in Sources */,
@@ -680,6 +727,7 @@
 				6374B5A329D3B1F500463586 /* RegisterViewController.swift in Sources */,
 				71391EF429D49F8100AFA507 /* BioCollectionViewCell.swift in Sources */,
 				71995E2829C2E42800EE4E94 /* PerfilViewController.swift in Sources */,
+				798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,
 				71B9D64029BA96BE00641097 /* Home.swift in Sources */,
