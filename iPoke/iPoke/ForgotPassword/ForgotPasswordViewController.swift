@@ -8,7 +8,7 @@
 import UIKit
 
 class ForgotPasswordViewController: UIViewController {
-
+    
     @IBOutlet weak var updatePasswordButton: UIButton!
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -24,13 +24,11 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-            self.navigationController?.setNavigationBarHidden(true, animated: false)
-        }
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     
     @IBAction func backButton(_ sender: Any) {
-        
         navigationController?.popViewController(animated: true)
-        
     }
     
 }
@@ -38,14 +36,15 @@ class ForgotPasswordViewController: UIViewController {
 extension ForgotPasswordViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.blue.cgColor    }
+        textField.layer.borderColor = UIColor.blue.cgColor
+    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.hasText == false {
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.red.cgColor
+            textField.layer.borderWidth = 1
+            textField.layer.borderColor = UIColor.red.cgColor
         } else {
-        textField.layer.borderWidth = 0
+            textField.layer.borderWidth = 0
         }
         if emailTextField.hasText && newPasswordTextField.hasText && confirmNewPasswordTextField.hasText {
             updatePasswordButton.isEnabled = true
@@ -54,5 +53,8 @@ extension ForgotPasswordViewController: UITextFieldDelegate {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
 }
 
