@@ -46,15 +46,14 @@ extension ForgotPasswordViewController: UITextFieldDelegate {
         } else {
             textField.layer.borderWidth = 0
         }
-        if emailTextField.hasText && newPasswordTextField.hasText && confirmNewPasswordTextField.hasText {
+        if emailTextField.hasText && newPasswordTextField.hasText && newPasswordTextField.text == confirmNewPasswordTextField.text {
             updatePasswordButton.isEnabled = true
         } else {
             updatePasswordButton.isEnabled = false
         }
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+        }
     }
 }
-
