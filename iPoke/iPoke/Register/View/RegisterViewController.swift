@@ -55,6 +55,17 @@ class RegisterViewController: UIViewController {
 
     @IBAction func createAccountButton(_ sender: UIButton) {
         
+        let alert: UIAlertController = UIAlertController(title: "Parabéns!", message: "Seu cadastro foi realizado com sucesso", preferredStyle: .alert)
+        
+        let action: UIAlertAction = UIAlertAction (title: "Ir para a Home", style: .default) {
+            (action)in
+            
+        }
+            alert.addAction(action)
+            
+        self.present(alert, animated: true, completion: nil)
+        
+        
     }
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)

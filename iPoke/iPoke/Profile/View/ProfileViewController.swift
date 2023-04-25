@@ -28,11 +28,33 @@ class ProfileViewController: UIViewController {
         
         //emitir um alert avisando que os dados foram atualizados com sucesso
         
+        let alert: UIAlertController = UIAlertController(title: "Parabéns!", message: "Seus dados foram atualizados com sucesso", preferredStyle: .alert)
+        
+        let action: UIAlertAction = UIAlertAction(title: "Fechar", style: .default)
+        
+        alert.addAction(action)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func tappedExitButton(_ sender: UIButton) {
         
         // emitir um alert perguntando se o usuario realmente deseja sair e se ele clicar em sair encaminhe ele para a tela de Login
+        
+        let alert: UIAlertController = UIAlertController(title: "Encerrar sessão", message: "você tem certeza que deseja encerrar a sua sessão?", preferredStyle: .actionSheet)
+        
+        let action: UIAlertAction = UIAlertAction(title: "cancelar", style: .cancel)
+        let action2: UIAlertAction = UIAlertAction(title: "sair", style: .destructive)
+        { action in
+            exit(1)
+        }
+        
+        alert.addAction(action)
+        alert.addAction(action2)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     
@@ -82,8 +104,6 @@ class ProfileViewController: UIViewController {
     }
 
 
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         
         navigationController?.setNavigationBarHidden(true, animated: false)
