@@ -59,6 +59,8 @@ class RegisterViewController: UIViewController {
         
         let action: UIAlertAction = UIAlertAction (title: "Ir para a Home", style: .default) {
             (action)in
+            let vc = TabBarController()
+            self.navigationController?.pushViewController(vc, animated: true)
             
         }
             alert.addAction(action)

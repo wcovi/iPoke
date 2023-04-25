@@ -47,6 +47,9 @@ class ProfileViewController: UIViewController {
         let action: UIAlertAction = UIAlertAction(title: "cancelar", style: .cancel)
         let action2: UIAlertAction = UIAlertAction(title: "sair", style: .destructive)
         { action in
+            //            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
+            //                self.dismiss(animated: true)
+            //                self.navigationController?.setViewControllers([vc], animated: true)
             exit(1)
         }
         
