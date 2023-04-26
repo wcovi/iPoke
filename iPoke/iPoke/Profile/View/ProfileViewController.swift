@@ -26,7 +26,6 @@ class ProfileViewController: UIViewController {
     
     @IBAction func updateInfoProfile(_ sender: UIButton) {
         
-        //emitir um alert avisando que os dados foram atualizados com sucesso
         
         let alert: UIAlertController = UIAlertController(title: "Parabéns!", message: "Seus dados foram atualizados com sucesso", preferredStyle: .alert)
         
@@ -40,17 +39,12 @@ class ProfileViewController: UIViewController {
     
     @IBAction func tappedExitButton(_ sender: UIButton) {
         
-        // emitir um alert perguntando se o usuario realmente deseja sair e se ele clicar em sair encaminhe ele para a tela de Login
-        
         let alert: UIAlertController = UIAlertController(title: "Encerrar sessão", message: "você tem certeza que deseja encerrar a sua sessão?", preferredStyle: .actionSheet)
         
         let action: UIAlertAction = UIAlertAction(title: "cancelar", style: .cancel)
         let action2: UIAlertAction = UIAlertAction(title: "sair", style: .destructive)
         { action in
-            //            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
-            //                self.dismiss(animated: true)
-            //                self.navigationController?.setViewControllers([vc], animated: true)
-            exit(1)
+            self.tabBarController?.navigationController?.popToRootViewController(animated: true)
         }
         
         alert.addAction(action)
@@ -60,6 +54,9 @@ class ProfileViewController: UIViewController {
         
     }
     
+    deinit {
+        print("ProfileViewControllerDestroied")
+    }
     
     func configTextField () {
         
