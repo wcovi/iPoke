@@ -7,13 +7,28 @@
 
 import UIKit
 
+protocol FamousCollectionScreenDelegate: AnyObject {
+    func tappedButton()
+}
+
 class FamousCollectionViewCellScreen: UIView {
+    
+    weak private var delegate: FamousCollectionScreenDelegate?
+    
+    public func setUpDelegate(delegate: FamousCollectionScreenDelegate?) {
+        self.delegate = delegate
+    }
 
     lazy var famousImageButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(tappedPokedexButton), for: .touchUpInside)
         return button
     }()
+    
+    @objc func tappedPokedexButton() {
+        self.delegate?.tappedButton()
+    }
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()

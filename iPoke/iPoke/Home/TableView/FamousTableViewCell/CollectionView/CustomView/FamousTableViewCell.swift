@@ -7,8 +7,19 @@
 
 import UIKit
 
-class FamousTableViewCell: UITableViewCell {
+protocol NagivationFamousCustom: AnyObject {
+    func didTapButtonForGenPokedex(cell: UITableViewCell)
+}
 
+class FamousTableViewCell: UITableViewCell {
+    
+    
+    private weak var nagivationFamousCustom: NagivationFamousCustom?
+
+    public func nagivationFamousCustom(delegate: NagivationFamousCustom) {
+        self.nagivationFamousCustom = delegate
+    }
+    
     var dataFamous: [Famous] = [Famous(nameType: "1º Gen", nameImage: "charmanderIcon"),
                                 Famous(nameType: "2º Gen", nameImage: "bulbasaurIcon"),
                                 Famous(nameType: "3º Gen", nameImage: "pikachuIcon"),
@@ -60,6 +71,7 @@ extension FamousTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: FamousCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: FamousCollectionViewCell.identifier, for: indexPath) as? FamousCollectionViewCell
         cell?.setupCell(data: dataFamous[indexPath.row])
+        cell?.famousCollectionViewCellScreen.setUpDelegate(delegate: self)
         return cell ?? UICollectionViewCell()
     }
     
@@ -72,3 +84,8 @@ extension FamousTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
+extension FamousTableViewCell: FamousCollectionScreenDelegate {
+    func tappedButton() {
+        self.nagivationFamousCustom?.didTapButtonForGenPokedex(cell: self)
+    }
+}

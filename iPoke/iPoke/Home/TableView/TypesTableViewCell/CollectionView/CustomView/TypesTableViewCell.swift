@@ -23,16 +23,16 @@ class TypesTableViewCell: UITableViewCell {
     
     var dataPokedex: [Pokedex] = []
     
-    var typesList: [Types] = [Types(type: "pokedex", typeButton: "pokedex"),
-                              Types(type: "fire", typeButton: "fireButton"),
-                              Types(type: "water", typeButton: "waterButton"),
-                              Types(type: "grass", typeButton: "grassButton"),
-                              Types(type: "flying", typeButton: "flyingButton"),
-                              Types(type: "fighting", typeButton: "fightingButton"),
-                              Types(type: "poison", typeButton: "poisonButton"),
-                              Types(type: "electric", typeButton: "electricButton"),
-                              Types(type: "ground", typeButton: "groundButton"),
-                              Types(type: "normal", typeButton: "normalButton"),
+    var typesList: [Types] = [Types(typeLabel: "Pokedex", typeButton: "pokedex"),
+                              Types(typeLabel: "Fire", typeButton: "fireButton"),
+                              Types(typeLabel: "Water", typeButton: "waterButton"),
+                              Types(typeLabel: "Grass", typeButton: "grassButton"),
+                              Types(typeLabel: "Flying", typeButton: "flyingButton"),
+                              Types(typeLabel: "Fighting", typeButton: "fightingButton"),
+                              Types(typeLabel: "Poison", typeButton: "poisonButton"),
+                              Types(typeLabel: "Electric", typeButton: "electricButton"),
+                              Types(typeLabel: "Ground", typeButton: "groundButton"),
+                              Types(typeLabel: "Normal", typeButton: "normalButton"),
 
     ]
     
@@ -93,7 +93,10 @@ extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let type = typesList[indexPath.row].typeLabel
         
+        let pokedexVC = PokedexViewController()
+        pokedexVC.typeFilter = type
     }
 
 }

@@ -19,15 +19,15 @@ class TypesTableViewCell2: UITableViewCell {
         self.navigationCustom2 = delegate
     }
     
-    var dataType: [Types] = [Types(type: "ice", typeButton: "iceButton"),
-                             Types(type: "ghost", typeButton: "ghostButton"),
-                             Types(type: "fairy", typeButton: "fairyButton"),
-                             Types(type: "dark", typeButton: "darkButton"),
-                             Types(type: "dragon", typeButton: "dragonButton"),
-                             Types(type: "steel", typeButton: "steelButton"),
-                             Types(type: "bugButton", typeButton: "bugButton"),
-                             Types(type: "psychic", typeButton: "psychicButton"),
-                             Types(type: "rock", typeButton: "rockButton"),
+    var dataType: [Types] = [Types(typeLabel: "ice", typeButton: "iceButton"),
+                             Types(typeLabel: "ghost", typeButton: "ghostButton"),
+                             Types(typeLabel: "fairy", typeButton: "fairyButton"),
+                             Types(typeLabel: "dark", typeButton: "darkButton"),
+                             Types(typeLabel: "dragon", typeButton: "dragonButton"),
+                             Types(typeLabel: "steel", typeButton: "steelButton"),
+                             Types(typeLabel: "bugButton", typeButton: "bugButton"),
+                             Types(typeLabel: "psychic", typeButton: "psychicButton"),
+                             Types(typeLabel: "rock", typeButton: "rockButton"),
     ]
     
     var typesTableViewCellScreen2: TypesTableViewCellScreen2 = TypesTableViewCellScreen2()

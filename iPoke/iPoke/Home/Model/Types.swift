@@ -8,6 +8,6 @@
 import Foundation
 
 struct Types {
-    var type: String
+    var typeLabel: String
     var typeButton: String
 }

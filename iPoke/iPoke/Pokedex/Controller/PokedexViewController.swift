@@ -16,19 +16,20 @@ class PokedexViewController: UIViewController {
     
     var selectedIndex: Int?
     var selectedType: String?
+    var typeFilter: String?
     
     var filteredData: [Pokedex] = []
     
-    var dataType: [Types] = [Types(type: "pokedex", typeButton: "pokedex"),
-                             Types(type: "fire", typeButton: "fireButton"),
-                             Types(type: "water", typeButton: "waterButton"),
-                             Types(type: "grass", typeButton: "grassButton"),
-                             Types(type: "flying", typeButton: "flyingButton"),
-                             Types(type: "fighting", typeButton: "fightingButton"),
-                             Types(type: "poison", typeButton: "poisonButton"),
-                             Types(type: "electric", typeButton: "electricButton"),
-                             Types(type: "ground", typeButton: "groundButton"),
-                             Types(type: "normal", typeButton: "normalButton"),
+    var dataType: [Types] = [Types(typeLabel: "pokedex", typeButton: "pokedex"),
+                             Types(typeLabel: "fire", typeButton: "fireButton"),
+                             Types(typeLabel: "water", typeButton: "waterButton"),
+                             Types(typeLabel: "grass", typeButton: "grassButton"),
+                             Types(typeLabel: "flying", typeButton: "flyingButton"),
+                             Types(typeLabel: "fighting", typeButton: "fightingButton"),
+                             Types(typeLabel: "poison", typeButton: "poisonButton"),
+                             Types(typeLabel: "electric", typeButton: "electricButton"),
+                             Types(typeLabel: "ground", typeButton: "groundButton"),
+                             Types(typeLabel: "normal", typeButton: "normalButton"),
 
     ]
     
@@ -202,7 +203,11 @@ class PokedexViewController: UIViewController {
 extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filteredData.count
+        if let typeFilter = typeFilter {
+            return filteredData.filter { $0.typeLabel == typeFilter }.count
+        } else {
+            return filteredData.count
+        }
     }
     
     func updateCollectionView() {
@@ -221,6 +226,13 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
         cell?.pokedexCollectionViewCellScreen.pokemonImage.image = UIImage(named: pokedexData.nameImage)
         cell?.pokedexCollectionViewCellScreen.typePrimaryImage.image = UIImage(named: pokedexData.primaryType)
         cell?.pokedexCollectionViewCellScreen.typeSecundaryImage.image = UIImage(named: pokedexData.secundaryType)
+        
+//        if let typeFilter = typeFilter {
+//            let filteredData = filteredData.filter { $0.typeLabel == typeFilter }
+//            cell?.configure(with: filteredData[indexPath.row])
+//        } else {
+//            cell?.configure(with: filteredData[indexPath.row])
+//        }
         return cell ?? UICollectionViewCell()
     }
     
