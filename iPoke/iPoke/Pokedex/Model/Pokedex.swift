@@ -11,4 +11,8 @@ struct Pokedex {
     var nameLabel: String
     var nameImage: String
     var typeLabel: String
+    var backgroundImage: String
+    var primaryType: String
+    var secundaryType: String
+    var originalIndex: Int
 }

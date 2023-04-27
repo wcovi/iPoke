@@ -9,6 +9,8 @@ import UIKit
 
 class BioCollectionViewCell: UICollectionViewCell {
     
+    var data: Pokedex?
+    
     static let identifier: String = "BioCollectionViewCell"
     
     let bioCollectionViewCellScreen: BioCollectionViewCellScreen = BioCollectionViewCellScreen()
@@ -28,6 +30,12 @@ class BioCollectionViewCell: UICollectionViewCell {
 //        pokedexCollectionViewCellScreen.layer.borderColor = UIColor.orange.cgColor
         bioCollectionViewCellScreen.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(bioCollectionViewCellScreen)
+    }
+    
+    func setupCell(data: PokeBio) {
+//        bioCollectionViewCellScreen.pokemonImageView.image = UIImage(named: data.nameImage)
+//        bioCollectionViewCellScreen.primaryTypeImage.image = UIImage(named: data.primaryType)
+//        bioCollectionViewCellScreen.secundaryTypeImage.image = UIImage(named: data.secundaryType)
     }
     
     func configConstraints() {

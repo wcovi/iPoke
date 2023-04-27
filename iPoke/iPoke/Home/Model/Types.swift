@@ -8,5 +8,6 @@
 import Foundation
 
 struct Types {
-    var nameImage: String
+    var type: String
+    var typeButton: String
 }

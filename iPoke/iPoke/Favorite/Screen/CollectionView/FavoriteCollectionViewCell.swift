@@ -12,6 +12,7 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "FavoriteCollectionViewCell"
     var data: [Pokedex] = []
     
+    var controller = FavoriteViewController()
     
     let favoriteCollectionViewCellScreen: FavoriteCollectionViewCellScreen = FavoriteCollectionViewCellScreen()
     
@@ -21,11 +22,11 @@ class FavoriteCollectionViewCell: UICollectionViewCell {
         configConstraints()
     }
     
-    public func setupCell(data: Pokedex) {
-        favoriteCollectionViewCellScreen.nameLabel.text = data.nameLabel
-        favoriteCollectionViewCellScreen.pokemonImage.image = UIImage(named: data.nameImage)
-        favoriteCollectionViewCellScreen.typeButton.setTitle(data.typeLabel, for: .normal)
-    }
+//    public func setupCell(data: Pokedex) {
+//        favoriteCollectionViewCellScreen.nameLabel.text = data.nameLabel
+//        favoriteCollectionViewCellScreen.pokemonImage.image = UIImage(named: data.nameImage)
+//        favoriteCollectionViewCellScreen.typeButton.setTitle(data.typeLabel, for: .normal)
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

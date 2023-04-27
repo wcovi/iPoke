@@ -7,13 +7,32 @@
 
 import UIKit
 
+protocol CollectionViewSelectionDelegate: AnyObject {
+    func didSelectType(_ type: String)
+}
+
 class TypesCollectionViewCell: UICollectionViewCell {
+    
+    weak var delegate: CollectionViewSelectionDelegate?
     
     static let identifier: String = "TypesCollectionViewCell"
     var data: [Types] = []
     
+    var pokedexViewController: PokedexViewController?
     
     let typesCollectionViewCellScreen: TypesCollectionViewCellScreen = TypesCollectionViewCellScreen()
+    
+    var type: String? {
+            didSet {
+                // Atualiza a célula com o tipo selecionado
+            }
+        }
+
+    func didSelectCell() {
+        if let type = self.type {
+            delegate?.didSelectType(type)
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +41,7 @@ class TypesCollectionViewCell: UICollectionViewCell {
     }
     
     public func setupCell(data: Types) {
-        typesCollectionViewCellScreen.typePokemonButton.setBackgroundImage(UIImage(named: data.nameImage), for: .normal)
+        typesCollectionViewCellScreen.typePokemonButton.setBackgroundImage(UIImage(named: data.typeButton), for: .normal)
     }
     
     required init?(coder: NSCoder) {

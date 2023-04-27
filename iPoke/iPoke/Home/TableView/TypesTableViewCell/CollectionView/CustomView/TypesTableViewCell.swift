@@ -19,16 +19,20 @@ class TypesTableViewCell: UITableViewCell {
         self.navigationCustom = delegate
     }
     
-    var dataType: [Types] = [Types(nameImage: "pokedex"),
-                             Types(nameImage: "fireButton"),
-                             Types(nameImage: "waterButton"),
-                             Types(nameImage: "grassButton"),
-                             Types(nameImage: "flyingButton"),
-                             Types(nameImage: "fightingButton"),
-                             Types(nameImage: "poisonButton"),
-                             Types(nameImage: "electricButton"),
-                             Types(nameImage: "groundButton"),
-                             Types(nameImage: "normalButton"),
+    var pokedexViewController: PokedexViewController?
+    
+    var dataPokedex: [Pokedex] = []
+    
+    var typesList: [Types] = [Types(type: "pokedex", typeButton: "pokedex"),
+                              Types(type: "fire", typeButton: "fireButton"),
+                              Types(type: "water", typeButton: "waterButton"),
+                              Types(type: "grass", typeButton: "grassButton"),
+                              Types(type: "flying", typeButton: "flyingButton"),
+                              Types(type: "fighting", typeButton: "fightingButton"),
+                              Types(type: "poison", typeButton: "poisonButton"),
+                              Types(type: "electric", typeButton: "electricButton"),
+                              Types(type: "ground", typeButton: "groundButton"),
+                              Types(type: "normal", typeButton: "normalButton"),
 
     ]
     
@@ -61,23 +65,35 @@ class TypesTableViewCell: UITableViewCell {
         ])
     }
     
+//    func didSelectType(_ type: String) {
+//        let pokedexVC = PokedexViewController()
+//        pokedexVC.selectedType = type
+//        navigationController?.pushViewController(pokedexVC, animated: true)
+//    }
+    
 }
 
 extension TypesTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataType.count
+        return typesList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TypesCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: TypesCollectionViewCell.identifier, for: indexPath) as? TypesCollectionViewCell
-        cell?.setupCell(data: dataType[indexPath.row])
+        cell?.setupCell(data: typesList[indexPath.row])
         cell?.typesCollectionViewCellScreen.setUpDelegate(delegate: self)
+        cell?.pokedexViewController = pokedexViewController
+        cell?.didSelectCell()
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 57)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
 
 }

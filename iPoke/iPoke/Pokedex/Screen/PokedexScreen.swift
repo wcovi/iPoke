@@ -66,12 +66,18 @@ class PokedexScreen: UIView {
         return label
     }()
     
-    lazy var filterButton: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setBackgroundImage(UIImage(systemName: "slider.horizontal.3"), for: .normal)
-        button.tintColor = .white
-        return button
+    lazy var searchTextField: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.autocorrectionType = .no
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Pokémons",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        textField.textColor = .white
+        textField.backgroundColor = UIColor(red: 87/255.0, green: 87/255.0, blue: 93/255.0, alpha: 1.0)
+        textField.setLeftPaddingViewWithImageInTextfield(padding: 30, imageName: "search")
+        textField.layer.cornerRadius = 20
+        return textField
     }()
 
     override init(frame: CGRect) {
@@ -84,8 +90,8 @@ class PokedexScreen: UIView {
         addSubview(fundoBioImageView)
         addSubview(backButton)
         addSubview(titleNameLabel)
-        addSubview(filterButton)
         addSubview(collectionView)
+        addSubview(searchTextField)
     }
     
     required init?(coder: NSCoder) {
@@ -101,16 +107,18 @@ class PokedexScreen: UIView {
             
             backButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
             backButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
+            backButton.heightAnchor.constraint(equalToConstant: 20),
+            backButton.widthAnchor.constraint(equalToConstant: 20),
             
             titleNameLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15),
             titleNameLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            filterButton.centerYAnchor.constraint(equalTo: titleNameLabel.centerYAnchor),
-            filterButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
-            filterButton.heightAnchor.constraint(equalToConstant: 24),
-            filterButton.widthAnchor.constraint(equalToConstant: 24),
+            searchTextField.topAnchor.constraint(equalTo: titleNameLabel.bottomAnchor, constant: 15),
+            searchTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
+            searchTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
+            searchTextField.heightAnchor.constraint(equalToConstant: 42),
             
-            collectionView.topAnchor.constraint(equalTo: titleNameLabel.bottomAnchor, constant: 40),
+            collectionView.topAnchor.constraint(equalTo: searchTextField.bottomAnchor, constant: 15),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),

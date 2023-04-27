@@ -10,27 +10,22 @@ import UIKit
 class FavoriteViewController: UIViewController {
     
     var favoriteScreen: FavoriteScreen?
+    var bioCollectionScreen: BioCollectionViewCellScreen?
+    weak var cellFavoriteSelectionDelegate: CellFavoriteSelectionDelegate?
     
-    var dataPokedex: [Pokedex] = [
-                                  Pokedex(nameLabel: "Venusaur", nameImage: "003", typeLabel: "Grass"),
-                                  Pokedex(nameLabel: "Charizard", nameImage: "006", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Blastoise", nameImage: "009", typeLabel: "Water"),
-                                  Pokedex(nameLabel: "Charmander", nameImage: "004", typeLabel: "Fire"),
-                                  Pokedex(nameLabel: "Squirtle", nameImage: "007", typeLabel: "Water"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "010", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "011", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "012", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "013", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "014", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "015", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "016", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "017", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "018", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "019", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "020", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "021", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "022", typeLabel: "Grass"),
-//                                  Pokedex(nameLabel: "Bulbasaur", nameImage: "023", typeLabel: "Grass"),
+    var selectedIndex: Int?
+    var selectedType: String?
+    
+    var dadosRecebidos: [Pokedex] = []
+    
+    var filteredData: [Pokedex] = []
+    
+    var dataPokedex: [Pokedex] = [Pokedex(nameLabel: "Bulbasaur", nameImage: "001", typeLabel: "Grass", backgroundImage: "grass", primaryType: "grassType", secundaryType: "poisonType", originalIndex: 0),
+                                  Pokedex(nameLabel: "Ivysaur", nameImage: "002", typeLabel: "Grass", backgroundImage: "grass", primaryType: "grassType", secundaryType: "poisonType", originalIndex: 1),
+                                  Pokedex(nameLabel: "Venusaur", nameImage: "003", typeLabel: "Grass", backgroundImage: "grass", primaryType: "grassType", secundaryType: "poisonType", originalIndex: 2),
+                                  Pokedex(nameLabel: "Charmander", nameImage: "004", typeLabel: "Fire", backgroundImage: "fire", primaryType: "fireType", secundaryType: "", originalIndex: 3),
+                                  Pokedex(nameLabel: "Charmeleon", nameImage: "005", typeLabel: "Fire", backgroundImage: "fire", primaryType: "fireType", secundaryType: "", originalIndex: 4),
+                                  Pokedex(nameLabel: "Charizard", nameImage: "006", typeLabel: "Fire", backgroundImage: "fire", primaryType: "fireType", secundaryType: "flyingType", originalIndex: 5),
     ]
     
     override func loadView() {
@@ -42,6 +37,7 @@ class FavoriteViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .orange
         favoriteScreen?.configCollectionViewProtocol(delegate: self, dataSource: self)
+        filteredData = dataPokedex
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -52,14 +48,20 @@ class FavoriteViewController: UIViewController {
 
 extension FavoriteViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        dataPokedex.count
+        return dadosRecebidos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: FavoriteCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: FavoriteCollectionViewCell.identifier, for: indexPath) as? FavoriteCollectionViewCell
-        cell?.setupCell(data: dataPokedex[indexPath.row])
-        cell?.backgroundColor = .white
-        cell?.layer.cornerRadius = 15
+        let pokedexData = filteredData[indexPath.row]
+        let recebidos = dadosRecebidos[indexPath.row]
+            
+        cell?.favoriteCollectionViewCellScreen.backgroundImage.image = UIImage(named: recebidos.backgroundImage)
+        cell?.favoriteCollectionViewCellScreen.numberPokeLabel.text = recebidos.nameImage
+        cell?.favoriteCollectionViewCellScreen.nameLabel.text = recebidos.nameLabel
+        cell?.favoriteCollectionViewCellScreen.pokemonImage.image = UIImage(named: recebidos.nameImage)
+        cell?.favoriteCollectionViewCellScreen.typePrimaryImage.image = UIImage(named: recebidos.primaryType)
+        cell?.favoriteCollectionViewCellScreen.typeSecundaryImage.image = UIImage(named: recebidos.secundaryType)
         return cell ?? UICollectionViewCell()
     }
     
@@ -68,7 +70,14 @@ extension FavoriteViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let pokemon = filteredData[indexPath.row]
+        let originalIndex = pokemon.originalIndex
+        let selectedPokemon = dataPokedex[originalIndex]
+        
+        cellFavoriteSelectionDelegate?.didSelectCell(with: selectedPokemon)
+        
         let vc = BioViewController()
+        vc.data = selectedPokemon
         navigationController?.pushViewController(vc, animated: true)
         
     }

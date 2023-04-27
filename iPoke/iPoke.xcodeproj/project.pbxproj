@@ -35,10 +35,10 @@
 		713AFBE829B6CFF200A7AEB1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE729B6CFF200A7AEB1 /* Types.swift */; };
 		716F023729C9CE2F0078515D /* BioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023629C9CE2F0078515D /* BioScreen.swift */; };
 		716F023929C9CE3F0078515D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023829C9CE3F0078515D /* BioViewController.swift */; };
+		71704DE729FAC15A009B6A1F /* PokeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71704DE629FAC15A009B6A1F /* PokeBio.swift */; };
 		718D464329B6A95000A4429D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D464229B6A95000A4429D /* HomeViewController.swift */; };
 		71995E2329C2E30500EE4E94 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E2229C2E30500EE4E94 /* TabBarController.swift */; };
 		71995E2629C2E35B00EE4E94 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E2529C2E35B00EE4E94 /* FavoriteViewController.swift */; };
-		71995E2829C2E42800EE4E94 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E2729C2E42800EE4E94 /* PerfilViewController.swift */; };
 		71995E2A29C2E6F200EE4E94 /* FamousTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E2929C2E6F200EE4E94 /* FamousTableViewCellScreen.swift */; };
 		71995E2C29C2E71700EE4E94 /* FamousTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E2B29C2E71700EE4E94 /* FamousTableViewCell.swift */; };
 		71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71995E3129C303D900EE4E94 /* NewsCollectionViewCellScreen.swift */; };
@@ -97,10 +97,10 @@
 		713AFBE729B6CFF200A7AEB1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		716F023629C9CE2F0078515D /* BioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScreen.swift; sourceTree = "<group>"; };
 		716F023829C9CE3F0078515D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		71704DE629FAC15A009B6A1F /* PokeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBio.swift; sourceTree = "<group>"; };
 		718D464229B6A95000A4429D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		71995E2229C2E30500EE4E94 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		71995E2529C2E35B00EE4E94 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		71995E2729C2E42800EE4E94 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		71995E2929C2E6F200EE4E94 /* FamousTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousTableViewCellScreen.swift; sourceTree = "<group>"; };
 		71995E2B29C2E71700EE4E94 /* FamousTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousTableViewCell.swift; sourceTree = "<group>"; };
 		71995E3129C303D900EE4E94 /* NewsCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCellScreen.swift; sourceTree = "<group>"; };
@@ -366,6 +366,7 @@
 		716F023529C9CE190078515D /* Bio */ = {
 			isa = PBXGroup;
 			children = (
+				71704DE529FAC148009B6A1F /* Modal */,
 				716F023A29C9CE670078515D /* Screen */,
 				716F023B29C9CE6F0078515D /* Controller */,
 			);
@@ -387,6 +388,14 @@
 				716F023829C9CE3F0078515D /* BioViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		71704DE529FAC148009B6A1F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				71704DE629FAC15A009B6A1F /* PokeBio.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		718D463C29B6A7A000A4429D /* Home */ = {
@@ -455,7 +464,6 @@
 			children = (
 				7132714829C4287600C1A2AA /* Screen */,
 				7132714729C4286300C1A2AA /* Controller */,
-				71995E2729C2E42800EE4E94 /* PerfilViewController.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -752,6 +760,7 @@
 				711B852D29CE97AD004EAA5D /* NewsScreen.swift in Sources */,
 				716F023729C9CE2F0078515D /* BioScreen.swift in Sources */,
 				71995E2A29C2E6F200EE4E94 /* FamousTableViewCellScreen.swift in Sources */,
+				71704DE729FAC15A009B6A1F /* PokeBio.swift in Sources */,
 				71B9D61F29B7DC6C00641097 /* FamousCollectionViewCellScreen.swift in Sources */,
 				711B852F29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift in Sources */,
 				798F005329F4BD450057AB6E /* Login.swift in Sources */,
@@ -766,7 +775,6 @@
 				63EF20B629F80CEF00EF345E /* Profile.swift in Sources */,
 				63EF20B229F80BCF00EF345E /* Register.swift in Sources */,
 				71391EF429D49F8100AFA507 /* BioCollectionViewCell.swift in Sources */,
-				71995E2829C2E42800EE4E94 /* PerfilViewController.swift in Sources */,
 				798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,

@@ -21,7 +21,7 @@ class TypesCollectionViewCell2: UICollectionViewCell {
     }
     
     public func setupCell(data: Types) {
-        typesCollectionViewCellScreen2.typePokemonButton.setImage(UIImage(named: data.nameImage), for: .normal)
+        typesCollectionViewCellScreen2.typePokemonButton.setImage(UIImage(named: data.typeButton), for: .normal)
     }
     
     required init?(coder: NSCoder) {

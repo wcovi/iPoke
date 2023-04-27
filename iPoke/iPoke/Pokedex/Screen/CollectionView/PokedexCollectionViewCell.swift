@@ -12,6 +12,7 @@ class PokedexCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "PokedexCollectionViewCell"
     var data: [Pokedex] = []
     
+    var controller = PokedexViewController()
     
     let pokedexCollectionViewCellScreen: PokedexCollectionViewCellScreen = PokedexCollectionViewCellScreen()
     
@@ -21,11 +22,14 @@ class PokedexCollectionViewCell: UICollectionViewCell {
         configConstraints()
     }
     
-    public func setupCell(data: Pokedex) {
-        pokedexCollectionViewCellScreen.nameLabel.text = data.nameLabel
-        pokedexCollectionViewCellScreen.pokemonImage.image = UIImage(named: data.nameImage)
-        pokedexCollectionViewCellScreen.typeButton.setTitle(data.typeLabel, for: .normal)
-    }
+//    public func setupCell(data: Pokedex) {
+//        pokedexCollectionViewCellScreen.backgroundImage.image = UIImage(named: data.backgroundImage)
+//        pokedexCollectionViewCellScreen.numberPokeLabel.text = data.nameImage
+//        pokedexCollectionViewCellScreen.nameLabel.text = data.nameLabel
+//        pokedexCollectionViewCellScreen.pokemonImage.image = UIImage(named: data.nameImage)
+//        pokedexCollectionViewCellScreen.typePrimaryImage.image = UIImage(named: data.primaryType)
+//        pokedexCollectionViewCellScreen.typeSecundaryImage.image = UIImage(named: data.secundaryType)
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
