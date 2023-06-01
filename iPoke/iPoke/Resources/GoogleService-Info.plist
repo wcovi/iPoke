@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>193556204805-bpjuk14in9helq3m4nv15i80e6807iv4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.193556204805-bpjuk14in9helq3m4nv15i80e6807iv4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBPqotoIq3c5PSzGN0b8vocQLKLUj5jSKU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>193556204805</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>wcovi.iPoke</string>
+	<key>PROJECT_ID</key>
+	<string>ipoke-dcb10</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ipoke-dcb10.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:193556204805:ios:cc1cb9113fcd19ad18bb6c</string>
+</dict>
+</plist>

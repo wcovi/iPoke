@@ -54,16 +54,6 @@ class PokedexCollectionViewCellScreen: UIView {
         return image
     }()
     
-//    lazy var favoriteButton: UIButton = {
-//        let button = UIButton()
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setImage(UIImage(systemName: "heart"), for: .normal)
-//        button.tintColor = .black
-//        return button
-//    }()
-    
-    
-    
     lazy var typePrimaryImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -77,19 +67,6 @@ class PokedexCollectionViewCellScreen: UIView {
         image.contentMode = .scaleToFill
         return image
     }()
-    
-//    lazy var typeLabel: UIButton = {
-//        let button = UIButton()
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.setTitle("Grass", for: .normal)
-//        button.setTitleColor(.white, for: .normal)
-//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-//        button.backgroundColor = .green
-//        button.layer.cornerRadius = 10
-//        button.layer.borderColor = UIColor.black.cgColor
-//        button.layer.borderWidth = 1
-//        return button
-//    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -123,7 +100,7 @@ class PokedexCollectionViewCellScreen: UIView {
             pokeballImage.centerXAnchor.constraint(equalTo: centerXAnchor),
             pokeballImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -8),
             pokeballImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 8),
-            pokeballImage.heightAnchor.constraint(equalToConstant: 140),
+            pokeballImage.bottomAnchor.constraint(equalTo:  bottomAnchor, constant: -50),
             
             pokemonImage.topAnchor.constraint(equalTo: topAnchor),
             pokemonImage.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -136,12 +113,7 @@ class PokedexCollectionViewCellScreen: UIView {
             nameLabel.topAnchor.constraint(equalTo: pokemonImage.bottomAnchor),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
-            
-//            favoriteButton.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-//            favoriteButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
-//            favoriteButton.heightAnchor.constraint(equalToConstant: 20),
-//            favoriteButton.widthAnchor.constraint(equalToConstant: 20),
-            
+    
             typePrimaryImage.topAnchor.constraint(equalTo: pokemonImage.bottomAnchor, constant: 36),
             typePrimaryImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             typePrimaryImage.trailingAnchor.constraint(equalTo: centerXAnchor, constant: -1),
@@ -153,12 +125,6 @@ class PokedexCollectionViewCellScreen: UIView {
             typeSecundaryImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
             typeSecundaryImage.heightAnchor.constraint(equalToConstant: 25),
             typeSecundaryImage.widthAnchor.constraint(equalToConstant: 62),
-            
-//            typeLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5),
-//            typeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
-////            typePrimaryImage.trailingAnchor.constraint(equalTo: typePrimaryImage.centerXAnchor, constant: -10),
-//            typeLabel.heightAnchor.constraint(equalToConstant: 25),
-//            typeLabel.widthAnchor.constraint(equalToConstant: 60),
         ])
     }
 }

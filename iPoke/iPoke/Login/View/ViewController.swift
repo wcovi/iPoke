@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    private var viewModel: LoginViewModel = LoginViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.delegate = self
@@ -28,7 +30,8 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func loginButton(_ sender: Any) {
+    @IBAction func loginButton(_ sender: UIButton) {
+        viewModel.registerUser(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
         let vc = TabBarController()
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -9,6 +9,15 @@ import UIKit
 
 class TypesTableViewCellScreen: UIView {
     
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Pokedex"
+        label.font = UIFont.boldSystemFont(ofSize: 23)
+        label.textColor = .white
+        return label
+    }()
+    
     lazy var collectionView: UICollectionView = {
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewLayout.init())
         collection.translatesAutoresizingMaskIntoConstraints = false
@@ -39,12 +48,17 @@ class TypesTableViewCellScreen: UIView {
     }
     
     func addSubview() {
+        addSubview(titleLabel)
         addSubview(collectionView)
     }
     
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: topAnchor),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 15),
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            titleLabel.heightAnchor.constraint(equalToConstant: 30),
+            
+            collectionView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
             collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),

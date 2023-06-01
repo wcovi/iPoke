@@ -213,26 +213,12 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
     func updateCollectionView() {
         guard let type = selectedType else { return }
         let filterData = dataPokedex.filter { $0.typeLabel == type }
-        // atualize sua CollectionView com os dados filtrados
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: PokedexCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: PokedexCollectionViewCell.identifier, for: indexPath) as? PokedexCollectionViewCell
         let pokedexData = filteredData[indexPath.row]
-            
-        cell?.pokedexCollectionViewCellScreen.backgroundImage.image = UIImage(named: pokedexData.backgroundImage)
-        cell?.pokedexCollectionViewCellScreen.numberPokeLabel.text = pokedexData.nameImage
-        cell?.pokedexCollectionViewCellScreen.nameLabel.text = pokedexData.nameLabel
-        cell?.pokedexCollectionViewCellScreen.pokemonImage.image = UIImage(named: pokedexData.nameImage)
-        cell?.pokedexCollectionViewCellScreen.typePrimaryImage.image = UIImage(named: pokedexData.primaryType)
-        cell?.pokedexCollectionViewCellScreen.typeSecundaryImage.image = UIImage(named: pokedexData.secundaryType)
-        
-//        if let typeFilter = typeFilter {
-//            let filteredData = filteredData.filter { $0.typeLabel == typeFilter }
-//            cell?.configure(with: filteredData[indexPath.row])
-//        } else {
-//            cell?.configure(with: filteredData[indexPath.row])
-//        }
+        cell?.setupCell(data: pokedexData)
         return cell ?? UICollectionViewCell()
     }
     
@@ -263,7 +249,7 @@ extension PokedexViewController: UITextFieldDelegate {
 
     func filterData() {
         if let searchText = pokedexScreen?.searchTextField.text, !searchText.isEmpty {
-            filteredData = dataPokedex.filter { $0.nameLabel.lowercased().contains(searchText.lowercased())
+            filteredData = dataPokedex.filter { $0.nameLabel.lowercased().hasPrefix(searchText.lowercased())
             }
         } else {
             filteredData = dataPokedex

@@ -51,8 +51,6 @@ class NewsCollectionViewCellScreen: UIView {
             newsImage.leadingAnchor.constraint(equalTo: leadingAnchor),
             newsImage.trailingAnchor.constraint(equalTo: trailingAnchor),
             newsImage.bottomAnchor.constraint(equalTo: bottomAnchor),
-            newsImage.heightAnchor.constraint(equalToConstant: 210),
-            newsImage.widthAnchor.constraint(equalToConstant: 158),
             
         ])
     }

@@ -162,7 +162,7 @@ class HomeScreen: UIView {
             searchTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30),
             searchTextField.heightAnchor.constraint(equalToConstant: 42),
             
-            tableView.topAnchor.constraint(equalTo: viewFundoHome.bottomAnchor, constant: 27),
+            tableView.topAnchor.constraint(equalTo: viewFundoHome.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),

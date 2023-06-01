@@ -33,6 +33,8 @@
 		713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */; };
 		713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE229B6CE8000A7AEB1 /* UITextField.swift */; };
 		713AFBE829B6CFF200A7AEB1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE729B6CFF200A7AEB1 /* Types.swift */; };
+		715E523B2A24F724009B5FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715E523A2A24F724009B5FFD /* GoogleService-Info.plist */; };
+		715E52552A28B258009B5FFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E52542A28B258009B5FFD /* HomeViewModel.swift */; };
 		716F023729C9CE2F0078515D /* BioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023629C9CE2F0078515D /* BioScreen.swift */; };
 		716F023929C9CE3F0078515D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023829C9CE3F0078515D /* BioViewController.swift */; };
 		71704DE729FAC15A009B6A1F /* PokeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71704DE629FAC15A009B6A1F /* PokeBio.swift */; };
@@ -64,11 +66,13 @@
 		79717D9929B68E930061AEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9729B68E930061AEBC /* Main.storyboard */; };
 		79717D9B29B68E950061AEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9A29B68E950061AEBC /* Assets.xcassets */; };
 		79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */; };
-		798F005329F4BD450057AB6E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005229F4BD450057AB6E /* Login.swift */; };
+		798F005329F4BD450057AB6E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005229F4BD450057AB6E /* LoginViewModel.swift */; };
 		798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005429F4BD5B0057AB6E /* ForgotPassword.swift */; };
+		F268E6DD817455DFB28C05AA /* Pods_iPoke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A24269F31384200A19C85 /* Pods_iPoke.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.release.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.release.xcconfig"; sourceTree = "<group>"; };
 		6318DD5129D3D58500092969 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		713AFBE229B6CE8000A7AEB1 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		713AFBE729B6CFF200A7AEB1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		715E523A2A24F724009B5FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		715E52542A28B258009B5FFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		716F023629C9CE2F0078515D /* BioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScreen.swift; sourceTree = "<group>"; };
 		716F023829C9CE3F0078515D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		71704DE629FAC15A009B6A1F /* PokeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBio.swift; sourceTree = "<group>"; };
@@ -128,8 +134,10 @@
 		79717D9A29B68E950061AEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79717D9D29B68E950061AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79717D9F29B68E950061AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		798F005229F4BD450057AB6E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		798F005229F4BD450057AB6E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		798F005429F4BD5B0057AB6E /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.debug.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6A24269F31384200A19C85 /* Pods_iPoke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPoke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +145,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F268E6DD817455DFB28C05AA /* Pods_iPoke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456BDC7167CB1DCC37AFCA07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A24269F31384200A19C85 /* Pods_iPoke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		632E0AA629C0F1330097DF6D /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,12 +221,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		6B7D26C58F834F77D0F88221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */,
+				43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		711B84B629C9F300004EAA5D /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
 				711B84C729CA5373004EAA5D /* Model */,
 				711B84BC29C9F3B9004EAA5D /* Screen */,
 				711B84BB29C9F3B2004EAA5D /* Controller */,
+				715E52562A28B63D009B5FFD /* ViewModel */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -363,6 +390,52 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		715E524F2A282C6B009B5FFD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				715E52502A282C73009B5FFD /* Provider */,
+				715E52512A282C80009B5FFD /* Manager */,
+				715E52522A282C91009B5FFD /* Business */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		715E52502A282C73009B5FFD /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		715E52512A282C80009B5FFD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		715E52522A282C91009B5FFD /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		715E52532A28B227009B5FFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				715E52542A28B258009B5FFD /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		715E52562A28B63D009B5FFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		716F023529C9CE190078515D /* Bio */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +477,7 @@
 				713AFBE629B6CF5200A7AEB1 /* Model */,
 				713AFBE529B6CEFE00A7AEB1 /* Screen */,
 				713AFBE429B6CEF000A7AEB1 /* Controller */,
+				715E52532A28B227009B5FFD /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -582,6 +656,8 @@
 			children = (
 				79717D9029B68E930061AEBC /* iPoke */,
 				79717D8F29B68E930061AEBC /* Products */,
+				6B7D26C58F834F77D0F88221 /* Pods */,
+				456BDC7167CB1DCC37AFCA07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -596,6 +672,7 @@
 		79717D9029B68E930061AEBC /* iPoke */ = {
 			isa = PBXGroup;
 			children = (
+				715E524F2A282C6B009B5FFD /* API */,
 				798F004D29F4BB840057AB6E /* Resources */,
 				799DDCEF29C60C17001C0556 /* Login */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
@@ -616,6 +693,7 @@
 		798F004D29F4BB840057AB6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				715E523A2A24F724009B5FFD /* GoogleService-Info.plist */,
 				79717D9129B68E930061AEBC /* AppDelegate.swift */,
 				79717D9329B68E930061AEBC /* SceneDelegate.swift */,
 				79717D9A29B68E950061AEBC /* Assets.xcassets */,
@@ -636,7 +714,7 @@
 		798F004F29F4BB9E0057AB6E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				798F005229F4BD450057AB6E /* Login.swift */,
+				798F005229F4BD450057AB6E /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -674,9 +752,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79717DA229B68E950061AEBC /* Build configuration list for PBXNativeTarget "iPoke" */;
 			buildPhases = (
+				93E53E2FDA4216EC39A4D3FD /* [CP] Check Pods Manifest.lock */,
 				79717D8A29B68E930061AEBC /* Sources */,
 				79717D8B29B68E930061AEBC /* Frameworks */,
 				79717D8C29B68E930061AEBC /* Resources */,
+				49B4DB0F32BBD4E16256885D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -731,10 +811,53 @@
 				632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */,
 				63D6692D29C0052D004689EA /* Profile.storyboard in Resources */,
 				79717D9929B68E930061AEBC /* Main.storyboard in Resources */,
+				715E523B2A24F724009B5FFD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49B4DB0F32BBD4E16256885D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E53E2FDA4216EC39A4D3FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPoke-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79717D8A29B68E930061AEBC /* Sources */ = {
@@ -763,7 +886,7 @@
 				71704DE729FAC15A009B6A1F /* PokeBio.swift in Sources */,
 				71B9D61F29B7DC6C00641097 /* FamousCollectionViewCellScreen.swift in Sources */,
 				711B852F29CE97C7004EAA5D /* NewsPageCollectionViewCell.swift in Sources */,
-				798F005329F4BD450057AB6E /* Login.swift in Sources */,
+				798F005329F4BD450057AB6E /* LoginViewModel.swift in Sources */,
 				71B9D61A29B7D5D700641097 /* TypesCollectionViewCell.swift in Sources */,
 				7132714A29C428A300C1A2AA /* FavoriteScreen.swift in Sources */,
 				711B84C229CA4285004EAA5D /* PokedexCollectionViewCell.swift in Sources */,
@@ -778,6 +901,7 @@
 				798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,
+				715E52552A28B258009B5FFD /* HomeViewModel.swift in Sources */,
 				71B9D64029BA96BE00641097 /* Home.swift in Sources */,
 				71B9D64329BA9DC200641097 /* TypesTableViewCell.swift in Sources */,
 				71995E9429C354B700EE4E94 /* TypesCollectionViewCell2.swift in Sources */,
@@ -935,12 +1059,13 @@
 		};
 		79717DA329B68E950061AEBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DR6UHJF8KP;
+				DEVELOPMENT_TEAM = 278X95PFN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPoke/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -954,7 +1079,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wcovi.iPoke;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yandeveloper.iPoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -967,12 +1092,13 @@
 		};
 		79717DA429B68E950061AEBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DR6UHJF8KP;
+				DEVELOPMENT_TEAM = 278X95PFN5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iPoke/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -986,7 +1112,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wcovi.iPoke;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yandeveloper.iPoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

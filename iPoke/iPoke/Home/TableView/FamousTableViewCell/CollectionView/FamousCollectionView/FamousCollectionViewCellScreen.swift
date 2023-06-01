@@ -57,16 +57,14 @@ class FamousCollectionViewCellScreen: UIView {
     
     func configConstraints() {
         NSLayoutConstraint.activate([
-            famousImageButton.topAnchor.constraint(equalTo: topAnchor),
+            famousImageButton.topAnchor.constraint(equalTo: topAnchor, constant: -15),
             famousImageButton.leadingAnchor.constraint(equalTo: leadingAnchor),
             famousImageButton.trailingAnchor.constraint(equalTo: trailingAnchor),
-            famousImageButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             famousImageButton.heightAnchor.constraint(equalToConstant: 85),
-            famousImageButton.widthAnchor.constraint(equalToConstant: 85),
             
             titleLabel.topAnchor.constraint(equalTo: famousImageButton.bottomAnchor, constant: 8),
             titleLabel.centerXAnchor.constraint(equalTo: famousImageButton.centerXAnchor),
-            titleLabel.widthAnchor.constraint(equalToConstant: 85)
+            titleLabel.widthAnchor.constraint(equalToConstant: 85),
         ])
     }
 }
