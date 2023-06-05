@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113D8F292A18C4FB118F881D /* Pods_iPoke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3C96A98752646193E4B910 /* Pods_iPoke.framework */; };
 		6318DD5229D3D58500092969 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6318DD5129D3D58500092969 /* Register.storyboard */; };
 		632E0AA829C0F1510097DF6D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */; };
 		632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */; };
@@ -33,7 +34,6 @@
 		713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */; };
 		713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE229B6CE8000A7AEB1 /* UITextField.swift */; };
 		713AFBE829B6CFF200A7AEB1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE729B6CFF200A7AEB1 /* Types.swift */; };
-		715E523B2A24F724009B5FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715E523A2A24F724009B5FFD /* GoogleService-Info.plist */; };
 		715E52552A28B258009B5FFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E52542A28B258009B5FFD /* HomeViewModel.swift */; };
 		716F023729C9CE2F0078515D /* BioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023629C9CE2F0078515D /* BioScreen.swift */; };
 		716F023929C9CE3F0078515D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023829C9CE3F0078515D /* BioViewController.swift */; };
@@ -60,6 +60,9 @@
 		71B9D64029BA96BE00641097 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9D63F29BA96BE00641097 /* Home.swift */; };
 		71B9D64329BA9DC200641097 /* TypesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9D64229BA9DC200641097 /* TypesTableViewCell.swift */; };
 		71B9D64529BA9E2900641097 /* TypesTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B9D64429BA9E2900641097 /* TypesTableViewCellScreen.swift */; };
+		71BF45422A2E319700F6502D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71BF45412A2E319600F6502D /* GoogleService-Info.plist */; };
+		71BF45462A2E331600F6502D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 71BF45452A2E331600F6502D /* FirebaseAnalytics */; };
+		71BF45482A2E331600F6502D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 71BF45472A2E331600F6502D /* FirebaseAuth */; };
 		79717D9229B68E930061AEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9129B68E930061AEBC /* AppDelegate.swift */; };
 		79717D9429B68E930061AEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9329B68E930061AEBC /* SceneDelegate.swift */; };
 		79717D9629B68E930061AEBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9529B68E930061AEBC /* ViewController.swift */; };
@@ -68,11 +71,9 @@
 		79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */; };
 		798F005329F4BD450057AB6E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005229F4BD450057AB6E /* LoginViewModel.swift */; };
 		798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005429F4BD5B0057AB6E /* ForgotPassword.swift */; };
-		F268E6DD817455DFB28C05AA /* Pods_iPoke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6A24269F31384200A19C85 /* Pods_iPoke.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.release.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.release.xcconfig"; sourceTree = "<group>"; };
 		6318DD5129D3D58500092969 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		632E0AA729C0F1510097DF6D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		632E0AA929C0F1650097DF6D /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		63D6692C29C0052D004689EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		63EF20B129F80BCF00EF345E /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		63EF20B529F80CEF00EF345E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		6D0E5ECCE566A2E1D37B063E /* Pods-iPoke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.debug.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.debug.xcconfig"; sourceTree = "<group>"; };
 		711B84B729C9F31F004EAA5D /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		711B84B929C9F336004EAA5D /* PokedexScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexScreen.swift; sourceTree = "<group>"; };
 		711B84C129CA4285004EAA5D /* PokedexCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -99,7 +101,6 @@
 		713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		713AFBE229B6CE8000A7AEB1 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		713AFBE729B6CFF200A7AEB1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
-		715E523A2A24F724009B5FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		715E52542A28B258009B5FFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		716F023629C9CE2F0078515D /* BioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScreen.swift; sourceTree = "<group>"; };
 		716F023829C9CE3F0078515D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +127,8 @@
 		71B9D63F29BA96BE00641097 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		71B9D64229BA9DC200641097 /* TypesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewCell.swift; sourceTree = "<group>"; };
 		71B9D64429BA9E2900641097 /* TypesTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewCellScreen.swift; sourceTree = "<group>"; };
+		71BF45412A2E319600F6502D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71BF45432A2E31B100F6502D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		79717D8E29B68E930061AEBC /* iPoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79717D9129B68E930061AEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79717D9329B68E930061AEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +139,8 @@
 		79717D9F29B68E950061AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798F005229F4BD450057AB6E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		798F005429F4BD5B0057AB6E /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
-		BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.debug.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.debug.xcconfig"; sourceTree = "<group>"; };
-		DB6A24269F31384200A19C85 /* Pods_iPoke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPoke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3C96A98752646193E4B910 /* Pods_iPoke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPoke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F983FEC855C8749175298B /* Pods-iPoke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPoke.release.xcconfig"; path = "Target Support Files/Pods-iPoke/Pods-iPoke.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,21 +148,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F268E6DD817455DFB28C05AA /* Pods_iPoke.framework in Frameworks */,
+				71BF45462A2E331600F6502D /* FirebaseAnalytics in Frameworks */,
+				71BF45482A2E331600F6502D /* FirebaseAuth in Frameworks */,
+				113D8F292A18C4FB118F881D /* Pods_iPoke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		456BDC7167CB1DCC37AFCA07 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB6A24269F31384200A19C85 /* Pods_iPoke.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		632E0AA629C0F1330097DF6D /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,8 +221,8 @@
 		6B7D26C58F834F77D0F88221 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */,
-				43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */,
+				6D0E5ECCE566A2E1D37B063E /* Pods-iPoke.debug.xcconfig */,
+				E1F983FEC855C8749175298B /* Pods-iPoke.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -388,37 +385,6 @@
 				71995E8B29C34F5900EE4E94 /* News.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		715E524F2A282C6B009B5FFD /* API */ = {
-			isa = PBXGroup;
-			children = (
-				715E52502A282C73009B5FFD /* Provider */,
-				715E52512A282C80009B5FFD /* Manager */,
-				715E52522A282C91009B5FFD /* Business */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		715E52502A282C73009B5FFD /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
-		715E52512A282C80009B5FFD /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		715E52522A282C91009B5FFD /* Business */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Business;
 			sourceTree = "<group>";
 		};
 		715E52532A28B227009B5FFD /* ViewModel */ = {
@@ -657,7 +623,7 @@
 				79717D9029B68E930061AEBC /* iPoke */,
 				79717D8F29B68E930061AEBC /* Products */,
 				6B7D26C58F834F77D0F88221 /* Pods */,
-				456BDC7167CB1DCC37AFCA07 /* Frameworks */,
+				FA418A96CF28956AF4946500 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -672,7 +638,6 @@
 		79717D9029B68E930061AEBC /* iPoke */ = {
 			isa = PBXGroup;
 			children = (
-				715E524F2A282C6B009B5FFD /* API */,
 				798F004D29F4BB840057AB6E /* Resources */,
 				799DDCEF29C60C17001C0556 /* Login */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
@@ -686,6 +651,7 @@
 				63D6692929C00476004689EA /* Profile */,
 				711B852629CE9741004EAA5D /* News */,
 				79717D9F29B68E950061AEBC /* Info.plist */,
+				71BF45432A2E31B100F6502D /* GoogleService-Info.plist */,
 			);
 			path = iPoke;
 			sourceTree = "<group>";
@@ -693,7 +659,7 @@
 		798F004D29F4BB840057AB6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				715E523A2A24F724009B5FFD /* GoogleService-Info.plist */,
+				71BF45412A2E319600F6502D /* GoogleService-Info.plist */,
 				79717D9129B68E930061AEBC /* AppDelegate.swift */,
 				79717D9329B68E930061AEBC /* SceneDelegate.swift */,
 				79717D9A29B68E950061AEBC /* Assets.xcassets */,
@@ -745,6 +711,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		FA418A96CF28956AF4946500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD3C96A98752646193E4B910 /* Pods_iPoke.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -752,17 +726,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79717DA229B68E950061AEBC /* Build configuration list for PBXNativeTarget "iPoke" */;
 			buildPhases = (
-				93E53E2FDA4216EC39A4D3FD /* [CP] Check Pods Manifest.lock */,
+				2B65A9FCD25C27850D673EA9 /* [CP] Check Pods Manifest.lock */,
 				79717D8A29B68E930061AEBC /* Sources */,
 				79717D8B29B68E930061AEBC /* Frameworks */,
 				79717D8C29B68E930061AEBC /* Resources */,
-				49B4DB0F32BBD4E16256885D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iPoke;
+			packageProductDependencies = (
+				71BF45452A2E331600F6502D /* FirebaseAnalytics */,
+				71BF45472A2E331600F6502D /* FirebaseAuth */,
+			);
 			productName = iPoke;
 			productReference = 79717D8E29B68E930061AEBC /* iPoke.app */;
 			productType = "com.apple.product-type.application";
@@ -791,6 +768,9 @@
 				Base,
 			);
 			mainGroup = 79717D8529B68E930061AEBC;
+			packageReferences = (
+				71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 79717D8F29B68E930061AEBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -811,31 +791,14 @@
 				632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */,
 				63D6692D29C0052D004689EA /* Profile.storyboard in Resources */,
 				79717D9929B68E930061AEBC /* Main.storyboard in Resources */,
-				715E523B2A24F724009B5FFD /* GoogleService-Info.plist in Resources */,
+				71BF45422A2E319700F6502D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		49B4DB0F32BBD4E16256885D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPoke/Pods-iPoke-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93E53E2FDA4216EC39A4D3FD /* [CP] Check Pods Manifest.lock */ = {
+		2B65A9FCD25C27850D673EA9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1059,7 +1022,7 @@
 		};
 		79717DA329B68E950061AEBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF6AF263A11EBA69FB775267 /* Pods-iPoke.debug.xcconfig */;
+			baseConfigurationReference = 6D0E5ECCE566A2E1D37B063E /* Pods-iPoke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1092,7 +1055,7 @@
 		};
 		79717DA429B68E950061AEBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43440AA33E661E3750B34A7D /* Pods-iPoke.release.xcconfig */;
+			baseConfigurationReference = E1F983FEC855C8749175298B /* Pods-iPoke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1112,7 +1075,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yandeveloper.iPoke;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yandeveloper.ipoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1145,6 +1108,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71BF45452A2E331600F6502D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		71BF45472A2E331600F6502D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79717D8629B68E930061AEBC /* Project object */;
 }

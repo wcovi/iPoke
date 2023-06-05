@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -55,31 +56,37 @@ class RegisterViewController: UIViewController {
     }
 
     @IBAction func createAccountButton(_ sender: UIButton) {
-//        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
-        
-//        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-//            if let error = error {
-//                // Lidar com erros durante a criação da conta
-//                print("Erro ao criar a conta: \(error.localizedDescription)")
-//                return
-//            }
-            
-            // Conta criada com sucesso, você pode fazer algo aqui
-//            print("Conta criada com sucesso!")
-            
-            let alert = UIAlertController(title: "Parabéns!", message: "Seu cadastro foi realizado com sucesso", preferredStyle: .alert)
-            
-            let action = UIAlertAction(title: "Ir para a Home", style: .default) { [weak self] (_) in
-                guard let self = self else { return }
-                
-                let vc = TabBarController()
-                self.navigationController?.pushViewController(vc, animated: true)
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+                if let error = error {
+                    print("Erro durante o cadastro: \(error.localizedDescription)")
+                } else {
+                    print("Cadastro realizado com sucesso!")
+                    self.openHome()
+                }
             }
-            
-            alert.addAction(action)
-            
-            self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+//    func signUp(email: String, password: String, completion: @escaping (Error?) -> Void) {
+//        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+//            completion(error)
+//        }
+//    }
+    
+    func openHome() {
+        let vc = TabBarController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func showMessage(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true)
+    }
     
     @IBAction func backButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pokedex {
+struct Pokedex: Codable {
     var nameLabel: String
     var nameImage: String
     var typeLabel: String

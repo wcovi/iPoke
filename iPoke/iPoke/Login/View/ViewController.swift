@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+//    lazy var auth = Auth.auth()
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -21,6 +24,11 @@ class ViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         loginButton.isEnabled = false
+        configPasswordTextField()
+    }
+    
+    func configPasswordTextField() {
+        passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
@@ -31,9 +39,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
-        viewModel.registerUser(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
-        let vc = TabBarController()
-        navigationController?.pushViewController(vc, animated: true)
+        if let email = emailTextField.text,
+           let password = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let error = error {
+                    print("Erro durante o login: \(error.localizedDescription)")
+                    self.showMessage(title: "Erro", message: "Email ou senha incorretos, tente novamente!")
+                } else {
+                    print("Login realizado com sucesso!")
+                    let vc = TabBarController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        }
+    }
+    
+    func showMessage(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     @IBAction func registerButton(_ sender: Any) {

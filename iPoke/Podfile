@@ -7,7 +7,4 @@ target 'iPoke' do
 
   # Pods for iPoke
 
-pod 'FirebaseCore'
-pod 'FirebaseAuth'
-
 end
