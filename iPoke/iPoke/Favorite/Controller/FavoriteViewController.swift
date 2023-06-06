@@ -53,7 +53,7 @@ extension FavoriteViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: FavoriteCollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: FavoriteCollectionViewCell.identifier, for: indexPath) as? FavoriteCollectionViewCell
-        let pokedexData = filteredData[indexPath.row]
+        _ = filteredData[indexPath.row]
         let recebidos = dadosRecebidos[indexPath.row]
             
         cell?.favoriteCollectionViewCellScreen.backgroundImage.image = UIImage(named: recebidos.backgroundImage)

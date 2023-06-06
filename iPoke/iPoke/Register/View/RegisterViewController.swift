@@ -62,7 +62,7 @@ class RegisterViewController: UIViewController {
                     print("Erro durante o cadastro: \(error.localizedDescription)")
                 } else {
                     print("Cadastro realizado com sucesso!")
-                    self.openHome()
+                    self.navigationController?.popViewController(animated: true)
                 }
             }
         }

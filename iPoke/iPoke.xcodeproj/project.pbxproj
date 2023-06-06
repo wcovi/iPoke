@@ -34,7 +34,6 @@
 		713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */; };
 		713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE229B6CE8000A7AEB1 /* UITextField.swift */; };
 		713AFBE829B6CFF200A7AEB1 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AFBE729B6CFF200A7AEB1 /* Types.swift */; };
-		715E52552A28B258009B5FFD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E52542A28B258009B5FFD /* HomeViewModel.swift */; };
 		716F023729C9CE2F0078515D /* BioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023629C9CE2F0078515D /* BioScreen.swift */; };
 		716F023929C9CE3F0078515D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716F023829C9CE3F0078515D /* BioViewController.swift */; };
 		71704DE729FAC15A009B6A1F /* PokeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71704DE629FAC15A009B6A1F /* PokeBio.swift */; };
@@ -63,12 +62,14 @@
 		71BF45422A2E319700F6502D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71BF45412A2E319600F6502D /* GoogleService-Info.plist */; };
 		71BF45462A2E331600F6502D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 71BF45452A2E331600F6502D /* FirebaseAnalytics */; };
 		71BF45482A2E331600F6502D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 71BF45472A2E331600F6502D /* FirebaseAuth */; };
+		71BF454C2A2EA37900F6502D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 71BF454B2A2EA37900F6502D /* Lottie */; };
+		71BF454F2A2EA91300F6502D /* LoadingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BF454E2A2EA91300F6502D /* LoadingView.storyboard */; };
+		71BF45512A2EA94B00F6502D /* LoadingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF45502A2EA94B00F6502D /* LoadingController.swift */; };
+		71BF45582A2F445B00F6502D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF45572A2F445B00F6502D /* LoginScreen.swift */; };
+		71BF455B2A2F44B500F6502D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF455A2A2F44B500F6502D /* LoginViewController.swift */; };
 		79717D9229B68E930061AEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9129B68E930061AEBC /* AppDelegate.swift */; };
 		79717D9429B68E930061AEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9329B68E930061AEBC /* SceneDelegate.swift */; };
-		79717D9629B68E930061AEBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79717D9529B68E930061AEBC /* ViewController.swift */; };
-		79717D9929B68E930061AEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9729B68E930061AEBC /* Main.storyboard */; };
 		79717D9B29B68E950061AEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9A29B68E950061AEBC /* Assets.xcassets */; };
-		79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */; };
 		798F005329F4BD450057AB6E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005229F4BD450057AB6E /* LoginViewModel.swift */; };
 		798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F005429F4BD5B0057AB6E /* ForgotPassword.swift */; };
 /* End PBXBuildFile section */
@@ -101,7 +102,6 @@
 		713AFBDF29B6CD5300A7AEB1 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		713AFBE229B6CE8000A7AEB1 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		713AFBE729B6CFF200A7AEB1 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
-		715E52542A28B258009B5FFD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		716F023629C9CE2F0078515D /* BioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScreen.swift; sourceTree = "<group>"; };
 		716F023829C9CE3F0078515D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		71704DE629FAC15A009B6A1F /* PokeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBio.swift; sourceTree = "<group>"; };
@@ -129,13 +129,14 @@
 		71B9D64429BA9E2900641097 /* TypesTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewCellScreen.swift; sourceTree = "<group>"; };
 		71BF45412A2E319600F6502D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		71BF45432A2E31B100F6502D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71BF454E2A2EA91300F6502D /* LoadingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingView.storyboard; sourceTree = "<group>"; };
+		71BF45502A2EA94B00F6502D /* LoadingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingController.swift; sourceTree = "<group>"; };
+		71BF45572A2F445B00F6502D /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		71BF455A2A2F44B500F6502D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		79717D8E29B68E930061AEBC /* iPoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79717D9129B68E930061AEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79717D9329B68E930061AEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79717D9529B68E930061AEBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79717D9829B68E930061AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79717D9A29B68E950061AEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79717D9D29B68E950061AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79717D9F29B68E950061AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798F005229F4BD450057AB6E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		798F005429F4BD5B0057AB6E /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 				71BF45462A2E331600F6502D /* FirebaseAnalytics in Frameworks */,
 				71BF45482A2E331600F6502D /* FirebaseAuth in Frameworks */,
 				113D8F292A18C4FB118F881D /* Pods_iPoke.framework in Frameworks */,
+				71BF454C2A2EA37900F6502D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,14 +389,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		715E52532A28B227009B5FFD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				715E52542A28B258009B5FFD /* HomeViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		715E52562A28B63D009B5FFD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +402,7 @@
 				71704DE529FAC148009B6A1F /* Modal */,
 				716F023A29C9CE670078515D /* Screen */,
 				716F023B29C9CE6F0078515D /* Controller */,
+				71BF45492A2E9CD300F6502D /* ViewModel */,
 			);
 			path = Bio;
 			sourceTree = "<group>";
@@ -443,7 +438,6 @@
 				713AFBE629B6CF5200A7AEB1 /* Model */,
 				713AFBE529B6CEFE00A7AEB1 /* Screen */,
 				713AFBE429B6CEF000A7AEB1 /* Controller */,
-				715E52532A28B227009B5FFD /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -617,6 +611,38 @@
 			path = ../TableView;
 			sourceTree = "<group>";
 		};
+		71BF45492A2E9CD300F6502D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71BF454D2A2EA89F00F6502D /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				71BF454E2A2EA91300F6502D /* LoadingView.storyboard */,
+				71BF45502A2EA94B00F6502D /* LoadingController.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		71BF455C2A2F44F300F6502D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				71BF45572A2F445B00F6502D /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		71BF455D2A2F44FA00F6502D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71BF455A2A2F44B500F6502D /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		79717D8529B68E930061AEBC = {
 			isa = PBXGroup;
 			children = (
@@ -639,9 +665,10 @@
 			isa = PBXGroup;
 			children = (
 				798F004D29F4BB840057AB6E /* Resources */,
+				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
+				71BF454D2A2EA89F00F6502D /* LoadingView */,
 				799DDCEF29C60C17001C0556 /* Login */,
 				632E0AA629C0F1330097DF6D /* ForgotPassword */,
-				713AFBE129B6CE5E00A7AEB1 /* Extensions */,
 				6374B59F29D3B1BB00463586 /* Register */,
 				71995E2129C2E2C900EE4E94 /* TabBar */,
 				718D463C29B6A7A000A4429D /* Home */,
@@ -663,18 +690,8 @@
 				79717D9129B68E930061AEBC /* AppDelegate.swift */,
 				79717D9329B68E930061AEBC /* SceneDelegate.swift */,
 				79717D9A29B68E950061AEBC /* Assets.xcassets */,
-				79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		798F004E29F4BB950057AB6E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				79717D9529B68E930061AEBC /* ViewController.swift */,
-				79717D9729B68E930061AEBC /* Main.storyboard */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		798F004F29F4BB9E0057AB6E /* ViewModel */ = {
@@ -705,7 +722,8 @@
 		799DDCEF29C60C17001C0556 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				798F004E29F4BB950057AB6E /* View */,
+				71BF455C2A2F44F300F6502D /* Screen */,
+				71BF455D2A2F44FA00F6502D /* Controller */,
 				798F004F29F4BB9E0057AB6E /* ViewModel */,
 			);
 			path = Login;
@@ -739,6 +757,7 @@
 			packageProductDependencies = (
 				71BF45452A2E331600F6502D /* FirebaseAnalytics */,
 				71BF45472A2E331600F6502D /* FirebaseAuth */,
+				71BF454B2A2EA37900F6502D /* Lottie */,
 			);
 			productName = iPoke;
 			productReference = 79717D8E29B68E930061AEBC /* iPoke.app */;
@@ -770,6 +789,7 @@
 			mainGroup = 79717D8529B68E930061AEBC;
 			packageReferences = (
 				71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				71BF454A2A2EA37900F6502D /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 79717D8F29B68E930061AEBC /* Products */;
 			projectDirPath = "";
@@ -785,12 +805,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79717D9E29B68E950061AEBC /* LaunchScreen.storyboard in Resources */,
 				79717D9B29B68E950061AEBC /* Assets.xcassets in Resources */,
 				6318DD5229D3D58500092969 /* Register.storyboard in Resources */,
+				71BF454F2A2EA91300F6502D /* LoadingView.storyboard in Resources */,
 				632E0AAA29C0F1650097DF6D /* ForgotPassword.storyboard in Resources */,
 				63D6692D29C0052D004689EA /* Profile.storyboard in Resources */,
-				79717D9929B68E930061AEBC /* Main.storyboard in Resources */,
 				71BF45422A2E319700F6502D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,7 +848,6 @@
 			files = (
 				71995E9629C354FB00EE4E94 /* TypesTableViewCellScreen2.swift in Sources */,
 				711B853F29CEFBE8004EAA5D /* FavoriteCollectionViewCellScreen.swift in Sources */,
-				79717D9629B68E930061AEBC /* ViewController.swift in Sources */,
 				79717D9229B68E930061AEBC /* AppDelegate.swift in Sources */,
 				71B9D62329B7DC9B00641097 /* Famous.swift in Sources */,
 				79717D9429B68E930061AEBC /* SceneDelegate.swift in Sources */,
@@ -857,6 +875,7 @@
 				71B9D61C29B7D5F800641097 /* TypesCollectionViewCellScreen.swift in Sources */,
 				711B853D29CEFBDB004EAA5D /* FavoriteCollectionViewCell.swift in Sources */,
 				716F023929C9CE3F0078515D /* BioViewController.swift in Sources */,
+				71BF45512A2EA94B00F6502D /* LoadingController.swift in Sources */,
 				6374B5A329D3B1F500463586 /* RegisterViewController.swift in Sources */,
 				63EF20B629F80CEF00EF345E /* Profile.swift in Sources */,
 				63EF20B229F80BCF00EF345E /* Register.swift in Sources */,
@@ -864,10 +883,10 @@
 				798F005529F4BD5B0057AB6E /* ForgotPassword.swift in Sources */,
 				713AFBE329B6CE8000A7AEB1 /* UITextField.swift in Sources */,
 				71995E3229C303D900EE4E94 /* NewsCollectionViewCellScreen.swift in Sources */,
-				715E52552A28B258009B5FFD /* HomeViewModel.swift in Sources */,
 				71B9D64029BA96BE00641097 /* Home.swift in Sources */,
 				71B9D64329BA9DC200641097 /* TypesTableViewCell.swift in Sources */,
 				71995E9429C354B700EE4E94 /* TypesCollectionViewCell2.swift in Sources */,
+				71BF455B2A2F44B500F6502D /* LoginViewController.swift in Sources */,
 				711B84BA29C9F336004EAA5D /* PokedexScreen.swift in Sources */,
 				71995E9229C3547B00EE4E94 /* TypesCollectionViewCellScreen2.swift in Sources */,
 				711B84B829C9F31F004EAA5D /* PokedexViewController.swift in Sources */,
@@ -879,31 +898,13 @@
 				71995E2629C2E35B00EE4E94 /* FavoriteViewController.swift in Sources */,
 				713AFBE029B6CD5300A7AEB1 /* HomeScreen.swift in Sources */,
 				718D464329B6A95000A4429D /* HomeViewController.swift in Sources */,
+				71BF45582A2F445B00F6502D /* LoginScreen.swift in Sources */,
 				71B9D62129B7DC7B00641097 /* FamousCollectionViewCell.swift in Sources */,
 				71995E9829C3551200EE4E94 /* TypesTableViewCell2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		79717D9729B68E930061AEBC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79717D9829B68E930061AEBC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		79717D9C29B68E950061AEBC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79717D9D29B68E950061AEBC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		79717DA029B68E950061AEBC /* Debug */ = {
@@ -1033,7 +1034,7 @@
 				INFOPLIST_FILE = iPoke/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1066,7 +1067,7 @@
 				INFOPLIST_FILE = iPoke/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1118,6 +1119,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		71BF454A2A2EA37900F6502D /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1130,6 +1139,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71BF45442A2E331600F6502D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		71BF454B2A2EA37900F6502D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71BF454A2A2EA37900F6502D /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

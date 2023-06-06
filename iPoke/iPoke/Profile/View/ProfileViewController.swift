@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController {
         let action: UIAlertAction = UIAlertAction(title: "cancelar", style: .cancel)
         let action2: UIAlertAction = UIAlertAction(title: "sair", style: .destructive)
         { action in
-            self.tabBarController?.navigationController?.popToRootViewController(animated: true)
+            self.tabBarController?.navigationController?.popViewController(animated: true)
         }
         
         alert.addAction(action)

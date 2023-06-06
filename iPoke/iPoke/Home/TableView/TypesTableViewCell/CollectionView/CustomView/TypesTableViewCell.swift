@@ -45,6 +45,7 @@ class TypesTableViewCell: UITableViewCell {
         addSubview()
         configConstraints()
         typesTableViewCellScreen.configCollectionViewProtocol(delegate: self, dataSource: self)
+        self.backgroundColor = .clear
     }
     
     required init?(coder: NSCoder) {

@@ -39,6 +39,7 @@ class TypesTableViewCell2: UITableViewCell {
         addSubview()
         configConstraints()
         typesTableViewCellScreen2.configCollectionViewProtocol(delegate: self, dataSource: self)
+        self.backgroundColor = .clear
     }
     
     required init?(coder: NSCoder) {

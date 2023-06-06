@@ -40,6 +40,7 @@ class FamousTableViewCell: UITableViewCell {
         addSubview()
         configConstraints()
         famousTableViewCellScreen.configCollectionViewProtocol(delegate: self, dataSource: self)
+        self.backgroundColor = .clear
     }
     
     required init?(coder: NSCoder) {

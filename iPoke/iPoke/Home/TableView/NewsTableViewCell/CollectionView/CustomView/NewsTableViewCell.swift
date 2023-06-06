@@ -35,6 +35,7 @@ class NewsTableViewCell: UITableViewCell {
         addSubview()
         configConstraints()
         newsTableViewCellScreen.configCollectionViewProtocol(delegate: self, dataSource: self)
+        self.backgroundColor = .clear
     }
     
     required init?(coder: NSCoder) {

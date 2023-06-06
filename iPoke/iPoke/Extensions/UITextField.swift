@@ -35,7 +35,7 @@ extension UITextField{
         leftView.frame = CGRect.init(x: 0.0, y: 0.0, width: padding+20, height: self.frame.size.height)
         let imgView = UIImageView()
         imgView.frame = CGRect.init(x: 20, y: 10, width: padding-10, height: self.frame.size.height - 20.0)
-        imgView.image = UIImage.init(named: imageName)
+        imgView.image = UIImage(named: imageName)
         leftView.addSubview(imgView)
         self.leftView = leftView
         self.leftViewMode = .always

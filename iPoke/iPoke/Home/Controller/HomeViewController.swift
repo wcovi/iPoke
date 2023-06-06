@@ -37,37 +37,33 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell( withIdentifier: TypesTableViewCell.identifier, for: indexPath) as? TypesTableViewCell
-            cell?.backgroundColor = .clear
             cell?.navigationDelegate(delegate: self)
+            tableView.allowsSelection = false
             return cell ?? UITableViewCell()
         }
         
         if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell( withIdentifier: TypesTableViewCell2.identifier, for: indexPath) as? TypesTableViewCell2
-            cell?.backgroundColor = .clear
             cell?.navigationDelegate(delegate: self)
+            tableView.allowsSelection = false
             return cell ?? UITableViewCell()
         }
         
         if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell( withIdentifier: FamousTableViewCell.identifier, for: indexPath) as? FamousTableViewCell
-            cell?.backgroundColor = .clear
             cell?.nagivationFamousCustom(delegate: self)
+            tableView.allowsSelection = false
             return cell ?? UITableViewCell()
         }
         
         if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier, for: indexPath) as? NewsTableViewCell
-            cell?.backgroundColor = .clear
             cell?.navigationDelegate(delegate: self)
+            tableView.allowsSelection = false
             return cell ?? UITableViewCell()
         }
         
         return UITableViewCell()
-        
-//        let cell: TypesTableViewCell? = tableView.dequeueReusableCell(withIdentifier: TypesTableViewCell.identifier, for: indexPath) as? TypesTableViewCell
-//        cell?.backgroundColor = .clear
-//        return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

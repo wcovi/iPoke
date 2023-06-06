@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nje-J3-b6n">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoadingView" id="Y6W-OH-hqX" customClass="LoadingController" customModule="iPoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundoHome" translatesAutoresizingMaskIntoConstraints="NO" id="ks1-rh-bRD">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoEstatica 1" translatesAutoresizingMaskIntoConstraints="NO" id="8v7-YR-TNi">
+                                <rect key="frame" x="81.666666666666686" y="371" width="230" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="OlI-A4-YSI"/>
+                                    <constraint firstAttribute="width" constant="230" id="f4Z-wJ-bDh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8v7-YR-TNi" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Sie-96-tEO"/>
+                            <constraint firstItem="ks1-rh-bRD" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZtM-Nf-bJc"/>
+                            <constraint firstAttribute="bottom" secondItem="ks1-rh-bRD" secondAttribute="bottom" id="f7F-yx-1Nl"/>
+                            <constraint firstItem="ks1-rh-bRD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fau-5c-m0R"/>
+                            <constraint firstItem="8v7-YR-TNi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jgk-Rv-TgP"/>
+                            <constraint firstItem="ks1-rh-bRD" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zc9-sK-8tr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DWI-ni-yqW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dDf-5y-iqG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nje-J3-b6n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Omh-yz-9ih">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="WKt-bS-6OL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O49-b1-2gq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoEstatica 1" width="165" height="82"/>
+        <image name="fundoHome" width="393" height="1087"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

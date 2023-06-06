@@ -212,7 +212,7 @@ extension PokedexViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func updateCollectionView() {
         guard let type = selectedType else { return }
-        let filterData = dataPokedex.filter { $0.typeLabel == type }
+        _ = dataPokedex.filter { $0.typeLabel == type }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
