@@ -15,6 +15,22 @@ class LoginViewController: UIViewController {
     override func loadView() {
         loginScreen = LoginScreen()
         view = loginScreen
+        loginScreen?.emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        loginScreen?.passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        loginScreen?.loginButton.isEnabled = false
+    }
+    
+    @objc private func textDidChange(_ textField: UITextField) {
+        validateTextFields()
+    }
+    
+    private func validateTextFields() {
+        guard let emailText = loginScreen?.emailTextField.text, let passwordText = loginScreen?.passwordTextField.text else {
+            loginScreen?.loginButton.isEnabled = false
+            return
+        }
+        
+        loginScreen?.loginButton.isEnabled = !emailText.isEmpty && !passwordText.isEmpty
     }
     
     override func viewDidLoad() {
@@ -56,14 +72,12 @@ extension LoginViewController: LoginScreenProtocol {
     }
     
     func tappedRegisterButton() {
-        let storyboard = UIStoryboard(name: "Register", bundle: nil)
-        let controler = storyboard.instantiateViewController(withIdentifier: "Register")
-        navigationController?.pushViewController(controler, animated: true)
+        let controller = RegisterViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     func tappedForgetPasswordButton() {
-        let storyboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
-        let controler = storyboard.instantiateViewController(withIdentifier: "ForgotPassword")
+        let controler = ForgotPasswordViewController()
         navigationController?.pushViewController(controler, animated: true)
     }
 }
@@ -71,7 +85,8 @@ extension LoginViewController: LoginScreenProtocol {
 extension LoginViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.blue.cgColor    }
+        textField.layer.borderColor = UIColor.darkGray.cgColor
+    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
@@ -79,7 +94,8 @@ extension LoginViewController: UITextFieldDelegate {
             textField.layer.borderWidth = 1
             textField.layer.borderColor = UIColor.red.cgColor
         }else {
-            textField.layer.borderWidth = 0
+            textField.layer.borderWidth = 1
+            textField.layer.borderColor = UIColor.darkGray.cgColor
         }
         
         if textField.hasText {

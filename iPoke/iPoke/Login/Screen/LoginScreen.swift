@@ -40,14 +40,16 @@ class LoginScreen: UIView {
     lazy var emailTextField: UITextField = {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.autocorrectionType = .no
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Type you email",
+            string: "Type your email",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.textColor = .black
-        textField.backgroundColor = .white
-        textField.keyboardType = .emailAddress
-        textField.setLeftPaddingInTextfield(padding: 10)
-        textField.layer.cornerRadius = 5
+        textField.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+        textField.setLeftPaddingViewWithImageInTextfield(padding: 30, imageName: "envelope.fill")
+        textField.tintColor = UIColor(red: 87/255.0, green: 87/255.0, blue: 93/255.0, alpha: 1.0)
+        textField.layer.cornerRadius = 20
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -56,13 +58,14 @@ class LoginScreen: UIView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.autocorrectionType = .no
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Type you password",
+            string: "Type your password",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         textField.textColor = .black
-        textField.backgroundColor = .white
+        textField.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+        textField.setLeftPaddingViewWithImageInTextfield(padding: 30, imageName: "lock.fill")
+        textField.tintColor = UIColor(red: 87/255.0, green: 87/255.0, blue: 93/255.0, alpha: 1.0)
+        textField.layer.cornerRadius = 20
         textField.isSecureTextEntry = true
-        textField.setLeftPaddingInTextfield(padding: 10)
-        textField.layer.cornerRadius = 5
         return textField
     }()
     
@@ -88,8 +91,8 @@ class LoginScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
-        button.layer.cornerRadius = 20
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.layer.cornerRadius = 25
         button.backgroundColor = UIColor(red: 56/255.0, green: 106/255.0, blue: 187/255.0, alpha: 1.0)
         button.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
         return button
@@ -181,8 +184,6 @@ class LoginScreen: UIView {
         addSubview(logoImageView)
         addSubview(emailTextField)
         addSubview(passwordTextField)
-        addSubview(saveEmailSwitch)
-        addSubview(subtitleSaveEmail)
         addSubview(loginButton)
         addSubview(forgetPasswordButton)
         addSubview(viewForAccountImageView)
@@ -208,22 +209,17 @@ class LoginScreen: UIView {
             emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             emailTextField.heightAnchor.constraint(equalToConstant: 50),
             
-            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 20),
+            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 15),
             passwordTextField.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
             passwordTextField.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             passwordTextField.heightAnchor.constraint(equalToConstant: 50),
             
-            saveEmailSwitch.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
-            saveEmailSwitch.leadingAnchor.constraint(equalTo: passwordTextField.leadingAnchor),
-            
-            subtitleSaveEmail.centerYAnchor.constraint(equalTo: saveEmailSwitch.centerYAnchor),
-            subtitleSaveEmail.leadingAnchor.constraint(equalTo: saveEmailSwitch.trailingAnchor, constant: 10),
-            subtitleSaveEmail.heightAnchor.constraint(equalToConstant: 20),
-            
-            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 100),
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 50),
             loginButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            loginButton.heightAnchor.constraint(equalToConstant: 40),
-            loginButton.widthAnchor.constraint(equalToConstant: 130),
+            loginButton.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
+            loginButton.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
+            loginButton.heightAnchor.constraint(equalToConstant: 60),
+//            loginButton.widthAnchor.constraint(equalToConstant: 200),
             
             forgetPasswordButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 10),
             forgetPasswordButton.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -233,29 +229,29 @@ class LoginScreen: UIView {
             viewForAccountImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             viewForAccountImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             viewForAccountImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            viewForAccountImageView.heightAnchor.constraint(equalToConstant: 170),
+            viewForAccountImageView.heightAnchor.constraint(equalToConstant: 150),
             
+            appleButton.topAnchor.constraint(equalTo: viewForAccountImageView.topAnchor, constant: 30),
             appleButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -70),
-            appleButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -75),
             appleButton.heightAnchor.constraint(equalToConstant: 60),
             appleButton.widthAnchor.constraint(equalToConstant: 45),
             
             googleButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            googleButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80),
+            googleButton.centerYAnchor.constraint(equalTo: appleButton.centerYAnchor),
             googleButton.heightAnchor.constraint(equalToConstant: 45),
             googleButton.widthAnchor.constraint(equalToConstant: 45),
             
             facebookButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 70),
-            facebookButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80),
+            facebookButton.centerYAnchor.constraint(equalTo: appleButton.centerYAnchor),
             facebookButton.heightAnchor.constraint(equalToConstant: 45),
             facebookButton.widthAnchor.constraint(equalToConstant: 45),
             
             noAccountLabel.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -50),
-            noAccountLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
+            noAccountLabel.centerYAnchor.constraint(equalTo: createHereButton.centerYAnchor),
             noAccountLabel.heightAnchor.constraint(equalToConstant: 20),
             
             createHereButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 50),
-            createHereButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
+            createHereButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),
             createHereButton.heightAnchor.constraint(equalToConstant: 20),
         ])
     }

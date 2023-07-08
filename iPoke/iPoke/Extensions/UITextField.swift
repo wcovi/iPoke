@@ -33,12 +33,20 @@ extension UITextField{
     func setLeftPaddingViewWithImageInTextfield(padding: Double, imageName: String) {
         let leftView = UIView()
         leftView.frame = CGRect.init(x: 0.0, y: 0.0, width: padding+20, height: self.frame.size.height)
+        
+        let rightView = UIView()
+        rightView.frame = CGRect.init(x: 0.0, y: 0.0, width: padding, height: self.frame.size.height)
+        
         let imgView = UIImageView()
-        imgView.frame = CGRect.init(x: 20, y: 10, width: padding-10, height: self.frame.size.height - 20.0)
-        imgView.image = UIImage(named: imageName)
+        imgView.frame = CGRect.init(x: 20, y: 10, width: padding-5, height: self.frame.size.height - 20.0)
+        imgView.image = UIImage(systemName: imageName)
+        imgView.contentMode = .scaleAspectFit
         leftView.addSubview(imgView)
+        
         self.leftView = leftView
         self.leftViewMode = .always
+        self.rightView = rightView
+        self.rightViewMode = .always
     }
     
     //MARK: -

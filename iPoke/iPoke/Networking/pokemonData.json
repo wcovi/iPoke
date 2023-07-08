@@ -1,0 +1,2984 @@
+
+[
+ {
+   "name": "Bulbasaur",
+   "id": 1,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Ivysaur",
+   "id": 2,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Venusaur",
+   "id": 3,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Charmander",
+   "id": 4,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Charmeleon",
+   "id": 5,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Charizard",
+   "id": 6,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+   "primaryType": "Fire",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Squirtle",
+   "id": 7,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Wartortle",
+   "id": 8,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Blastoise",
+   "id": 9,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Caterpie",
+   "id": 10,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Metapod",
+   "id": 11,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Butterfree",
+   "id": 12,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Weedle",
+   "id": 13,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Kakuna",
+   "id": 14,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Beedrill",
+   "id": 15,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Pidgey",
+   "id": 16,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Pidgeotto",
+   "id": 17,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Pidgeot",
+   "id": 18,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Rattata",
+   "id": 19,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Raticate",
+   "id": 20,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Spearow",
+   "id": 21,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Fearow",
+   "id": 22,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Ekans",
+   "id": 23,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Arbok",
+   "id": 24,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Pikachu",
+   "id": 25,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Raichu",
+   "id": 26,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sandshrew",
+   "id": 27,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sandslash",
+   "id": 28,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nidoran♀",
+   "id": 29,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nidorina",
+   "id": 30,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nidoqueen",
+   "id": 31,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
+   "primaryType": "Poison",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Nidoran♂",
+   "id": 32,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nidorino",
+   "id": 33,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nidoking",
+   "id": 34,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
+   "primaryType": "Poison",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Clefairy",
+   "id": 35,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Clefable",
+   "id": 36,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Vulpix",
+   "id": 37,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Ninetales",
+   "id": 38,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Jigglypuff",
+   "id": 39,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png",
+   "primaryType": "Normal",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Wigglytuff",
+   "id": 40,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png",
+   "primaryType": "Normal",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Zubat",
+   "id": 41,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png",
+   "primaryType": "Poison",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Golbat",
+   "id": 42,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png",
+   "primaryType": "Poison",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Oddish",
+   "id": 43,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Gloom",
+   "id": 44,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Vileplume",
+   "id": 45,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Paras",
+   "id": 46,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png",
+   "primaryType": "Bug",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Parasect",
+   "id": 47,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png",
+   "primaryType": "Bug",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Venonat",
+   "id": 48,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Venomoth",
+   "id": 49,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Diglett",
+   "id": 50,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dugtrio",
+   "id": 51,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Meowth",
+   "id": 52,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Persian",
+   "id": 53,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Psyduck",
+   "id": 54,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Golduck",
+   "id": 55,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/055.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Mankey",
+   "id": 56,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Primeape",
+   "id": 57,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/057.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Growlithe",
+   "id": 58,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Arcanine",
+   "id": 59,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Poliwag",
+   "id": 60,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Poliwhirl",
+   "id": 61,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/061.png",
+   "primaryType": "Water",
+ },
+ {
+   "name": "Poliwrath",
+   "id": 62,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png",
+   "primaryType": "Water",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Abra",
+   "id": 63,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Kadabra",
+   "id": 64,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Alakazam",
+   "id": 65,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Machop",
+   "id": 66,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Machoke",
+   "id": 67,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Machamp",
+   "id": 68,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Bellsprout",
+   "id": 69,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Weepinbell",
+   "id": 70,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/070.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Victreebel",
+   "id": 71,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Tentacool",
+   "id": 72,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png",
+   "primaryType": "Water",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Tentacruel",
+   "id": 73,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png",
+   "primaryType": "Water",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Geodude",
+   "id": 74,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Graveler",
+   "id": 75,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Golem",
+   "id": 76,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Ponyta",
+   "id": 77,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Rapidash",
+   "id": 78,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Slowpoke",
+   "id": 79,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/079.png",
+   "primaryType": "Water",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Slowbro",
+   "id": 80,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png",
+   "primaryType": "Water",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Magnemite",
+   "id": 81,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png",
+   "primaryType": "Electric",
+   "secondaryType": "Steel"
+ },
+ {
+   "name": "Magneton",
+   "id": 82,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png",
+   "primaryType": "Electric",
+   "secondaryType": "Steel"
+ },
+ {
+   "name": "Farfetch'd",
+   "id": 83,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Doduo",
+   "id": 84,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Dodrio",
+   "id": 85,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Seel",
+   "id": 86,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dewgong",
+   "id": 87,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png",
+   "primaryType": "Water",
+   "secondaryType": "Ice"
+ },
+ {
+   "name": "Grimer",
+   "id": 88,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Muk",
+   "id": 89,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Shellder",
+   "id": 90,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Cloyster",
+   "id": 91,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png",
+   "primaryType": "Water",
+   "secondaryType": "Ice"
+ },
+ {
+   "name": "Gastly",
+   "id": 92,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Haunter",
+   "id": 93,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Gengar",
+   "id": 94,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Onix",
+   "id": 95,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Drowzee",
+   "id": 96,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hypno",
+   "id": 97,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Krabby",
+   "id": 98,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Kingler",
+   "id": 99,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Voltorb",
+   "id": 100,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Electrode",
+   "id": 101,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/101.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Exeggcute",
+   "id": 102,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/102.png",
+   "primaryType": "Grass",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Exeggutor",
+   "id": 103,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/103.png",
+   "primaryType": "Grass",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Cubone",
+   "id": 104,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Marowak",
+   "id": 105,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/105.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hitmonlee",
+   "id": 106,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/106.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hitmonchan",
+   "id": 107,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Lickitung",
+   "id": 108,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Koffing",
+   "id": 109,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/109.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Weezing",
+   "id": 110,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/110.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Rhyhorn",
+   "id": 111,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/111.png",
+   "primaryType": "Ground",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Rhydon",
+   "id": 112,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/112.png",
+   "primaryType": "Ground",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Chansey",
+   "id": 113,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/113.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Tangela",
+   "id": 114,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Kangaskhan",
+   "id": 115,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/115.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Horsea",
+   "id": 116,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Seadra",
+   "id": 117,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/117.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Goldeen",
+   "id": 118,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Seaking",
+   "id": 119,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/119.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Staryu",
+   "id": 120,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Starmie",
+   "id": 121,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/121.png",
+   "primaryType": "Water",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Mr. Mime",
+   "id": 122,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Scyther",
+   "id": 123,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/123.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Jynx",
+   "id": 124,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/124.png",
+   "primaryType": "Ice",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Electabuzz",
+   "id": 125,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/125.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Magmar",
+   "id": 126,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Pinsir",
+   "id": 127,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Tauros",
+   "id": 128,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/128.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Magikarp",
+   "id": 129,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Gyarados",
+   "id": 130,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130.png",
+   "primaryType": "Water",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Lapras",
+   "id": 131,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png",
+   "primaryType": "Water",
+   "secondaryType": "Ice"
+ },
+ {
+   "name": "Ditto",
+   "id": 132,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Eevee",
+   "id": 133,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Vaporeon",
+   "id": 134,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Jolteon",
+   "id": 135,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Flareon",
+   "id": 136,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Porygon",
+   "id": 137,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/137.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Omanyte",
+   "id": 138,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/138.png",
+   "primaryType": "Rock",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Omastar",
+   "id": 139,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/139.png",
+   "primaryType": "Rock",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Kabuto",
+   "id": 140,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/140.png",
+   "primaryType": "Rock",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Kabutops",
+   "id": 141,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/141.png",
+   "primaryType": "Rock",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Aerodactyl",
+   "id": 142,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/142.png",
+   "primaryType": "Rock",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Snorlax",
+   "id": 143,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Articuno",
+   "id": 144,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/144.png",
+   "primaryType": "Ice",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Zapdos",
+   "id": 145,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png",
+   "primaryType": "Electric",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Moltres",
+   "id": 146,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png",
+   "primaryType": "Fire",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Dratini",
+   "id": 147,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/147.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dragonair",
+   "id": 148,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/148.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dragonite",
+   "id": 149,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Mewtwo",
+   "id": 150,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Mew",
+   "id": 151,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Chikorita",
+   "id": 152,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Bayleef",
+   "id": 153,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Meganium",
+   "id": 154,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Cyndaquil",
+   "id": 155,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Quilava",
+   "id": 156,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/156.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Typhlosion",
+   "id": 157,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Totodile",
+   "id": 158,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Croconaw",
+   "id": 159,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/159.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Feraligatr",
+   "id": 160,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sentret",
+   "id": 161,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/161.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Furret",
+   "id": 162,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/162.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hoothoot",
+   "id": 163,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/163.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Noctowl",
+   "id": 164,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/164.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Ledyba",
+   "id": 165,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/165.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Ledian",
+   "id": 166,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/166.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Spinarak",
+   "id": 167,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/167.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Ariados",
+   "id": 168,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/168.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+     "name": "Crobat",
+     "id": 169,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/169.png",
+     "primaryType": "Poison",
+     "secondaryType": "Flying"
+   },
+   {
+     "name": "Chinchou",
+     "id": 170,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/170.png",
+     "primaryType": "Water",
+     "secondaryType": "Electric"
+   },
+   {
+     "name": "Lanturn",
+     "id": 171,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/171.png",
+     "primaryType": "Water",
+     "secondaryType": "Electric"
+   },
+   {
+     "name": "Pichu",
+     "id": 172,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png",
+     "primaryType": "Electric",
+     "secondaryType": "Nothing"
+   },
+   {
+     "name": "Cleffa",
+     "id": 173,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/173.png",
+     "primaryType": "Fairy",
+     "secondaryType": "Nothing"
+   },
+   {
+     "name": "Igglybuff",
+     "id": 174,
+     "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/174.png",
+     "primaryType": "Normal",
+     "secondaryType": "Fairy"
+   },
+ {
+   "name": "Togepi",
+   "id": 175,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/175.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Togetic",
+   "id": 176,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/176.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Natu",
+   "id": 177,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/177.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Xatu",
+   "id": 178,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/178.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Mareep",
+   "id": 179,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/179.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Flaaffy",
+   "id": 180,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/180.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Ampharos",
+   "id": 181,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/181.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Bellossom",
+   "id": 182,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/182.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Marill",
+   "id": 183,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/183.png",
+   "primaryType": "Water",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Azumarill",
+   "id": 184,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/184.png",
+   "primaryType": "Water",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Sudowoodo",
+   "id": 185,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/185.png",
+   "primaryType": "Rock",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Politoed",
+   "id": 186,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/186.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hoppip",
+   "id": 187,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/187.png",
+   "primaryType": "Grass",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Skiploom",
+   "id": 188,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/188.png",
+   "primaryType": "Grass",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Jumpluff",
+   "id": 189,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/189.png",
+   "primaryType": "Grass",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Aipom",
+   "id": 190,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/190.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sunkern",
+   "id": 191,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/191.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sunflora",
+   "id": 192,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/192.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Yanma",
+   "id": 193,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/193.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Wooper",
+   "id": 194,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/194.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Quagsire",
+   "id": 195,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/195.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Espeon",
+   "id": 196,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/196.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Umbreon",
+   "id": 197,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
+   "primaryType": "Dark",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Murkrow",
+   "id": 198,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/198.png",
+   "primaryType": "Dark",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Slowking",
+   "id": 199,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/199.png",
+   "primaryType": "Water",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Misdreavous",
+   "id": 200,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/200.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Unown",
+   "id": 201,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/201.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Wobbuffet",
+   "id": 202,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/202.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Girafarig",
+   "id": 203,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/203.png",
+   "primaryType": "Normal",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Pineco",
+   "id": 204,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/204.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Forretress",
+   "id": 205,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/205.png",
+   "primaryType": "Bug",
+   "secondaryType": "Steel"
+ },
+ {
+   "name": "Dunsparce",
+   "id": 206,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/206.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Gligar",
+   "id": 207,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/207.png",
+   "primaryType": "Ground",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Steelix",
+   "id": 208,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/208.png",
+   "primaryType": "Steel",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Snubbull",
+   "id": 209,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/209.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Granbull",
+   "id": 210,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/210.png",
+   "primaryType": "Fairy",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Qwilfish",
+   "id": 211,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/211.png",
+   "primaryType": "Water",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Scizor",
+   "id": 212,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/212.png",
+   "primaryType": "Bug",
+   "secondaryType": "Steel"
+ },
+ {
+   "name": "Shuckle",
+   "id": 213,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/213.png",
+   "primaryType": "Bug",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Heracross",
+   "id": 214,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/214.png",
+   "primaryType": "Bug",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Sneasel",
+   "id": 215,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/215.png",
+   "primaryType": "Dark",
+   "secondaryType": "Ice"
+ },
+ {
+   "name": "Teddiursa",
+   "id": 216,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/216.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Ursaring",
+   "id": 217,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/217.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Slugma",
+   "id": 218,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/218.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Magcargo",
+   "id": 219,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/219.png",
+   "primaryType": "Fire",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Swinub",
+   "id": 220,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/220.png",
+   "primaryType": "Ice",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Piloswine",
+   "id": 221,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/221.png",
+   "primaryType": "Ice",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Corsola",
+   "id": 222,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/222.png",
+   "primaryType": "Water",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Remoraid",
+   "id": 223,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/223.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Octillery",
+   "id": 224,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/224.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Delibird",
+   "id": 225,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/225.png",
+   "primaryType": "Ice",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Mantine",
+   "id": 226,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/226.png",
+   "primaryType": "Water",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Skarmory",
+   "id": 227,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/227.png",
+   "primaryType": "Steel",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Houndour",
+   "id": 228,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/228.png",
+   "primaryType": "Dark",
+   "secondaryType": "Fire"
+ },
+ {
+   "name": "Houndoom",
+   "id": 229,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/229.png",
+   "primaryType": "Dark",
+   "secondaryType": "Fire"
+ },
+ {
+   "name": "Kingdra",
+   "id": 230,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/230.png",
+   "primaryType": "Water",
+   "secondaryType": "Dragon"
+ },
+ {
+   "name": "Phanpy",
+   "id": 231,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/231.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Donphan",
+   "id": 232,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/232.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Porygon2",
+   "id": 233,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/233.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Stantler",
+   "id": 234,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/234.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Smeargle",
+   "id": 235,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/235.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Tyrogue",
+   "id": 236,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/236.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hitmontop",
+   "id": 237,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/237.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Smoochum",
+   "id": 238,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/238.png",
+   "primaryType": "Ice",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Elekid",
+   "id": 239,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/239.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Magby",
+   "id": 240,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/240.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Miltank",
+   "id": 241,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/241.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Blissey",
+   "id": 242,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/242.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Raikou",
+   "id": 243,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/243.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Entei",
+   "id": 244,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/244.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Suicune",
+   "id": 245,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/245.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Larvitar",
+   "id": 246,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/246.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Pupitar",
+   "id": 247,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/247.png",
+   "primaryType": "Rock",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Tyranitar",
+   "id": 248,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248.png",
+   "primaryType": "Rock",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Lugia",
+   "id": 249,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Ho-Oh",
+   "id": 250,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/250.png",
+   "primaryType": "Fire",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Celebi",
+   "id": 251,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/251.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Treecko",
+   "id": 252,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Grovyle",
+   "id": 253,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sceptile",
+   "id": 254,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Torchic",
+   "id": 255,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Combusken",
+   "id": 256,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/256.png",
+   "primaryType": "Fire",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Blaziken",
+   "id": 257,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png",
+   "primaryType": "Fire",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Mudkip",
+   "id": 258,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Marshtomp",
+   "id": 259,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/259.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Swampert",
+   "id": 260,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Poochyena",
+   "id": 261,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/261.png",
+   "primaryType": "Dark",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Mightyena",
+   "id": 262,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/262.png",
+   "primaryType": "Dark",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Zigzagoon",
+   "id": 263,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/263.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Linoone",
+   "id": 264,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/264.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Wurmple",
+   "id": 265,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/265.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Silcoon",
+   "id": 266,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/266.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Beautifly",
+   "id": 267,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/267.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Cascoon",
+   "id": 268,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/268.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dustox",
+   "id": 269,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/269.png",
+   "primaryType": "Bug",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Lotad",
+   "id": 270,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/270.png",
+   "primaryType": "Water",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Lombre",
+   "id": 271,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/271.png",
+   "primaryType": "Water",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Ludicolo",
+   "id": 272,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/272.png",
+   "primaryType": "Water",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Seedot",
+   "id": 273,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/273.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nuzleaf",
+   "id": 274,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/274.png",
+   "primaryType": "Grass",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Shiftry",
+   "id": 275,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/275.png",
+   "primaryType": "Grass",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Taillow",
+   "id": 276,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/276.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Swellow",
+   "id": 277,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/277.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Wingull",
+   "id": 278,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/278.png",
+   "primaryType": "Water",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Pelipper",
+   "id": 279,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/279.png",
+   "primaryType": "Water",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Ralts",
+   "id": 280,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/280.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Kirlia",
+   "id": 281,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/281.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Gardevoir",
+   "id": 282,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Surskit",
+   "id": 283,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/283.png",
+   "primaryType": "Bug",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Masquerain",
+   "id": 284,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/284.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Shroomish",
+   "id": 285,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/285.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Breloom",
+   "id": 286,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/286.png",
+   "primaryType": "Grass",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Slakoth",
+   "id": 287,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/287.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Vigoroth",
+   "id": 288,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/288.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Slaking",
+   "id": 289,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/289.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Nincada",
+   "id": 290,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/290.png",
+   "primaryType": "Bug",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Ninjask",
+   "id": 291,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/291.png",
+   "primaryType": "Bug",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Shedinja",
+   "id": 292,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/292.png",
+   "primaryType": "Bug",
+   "secondaryType": "Ghost"
+ },
+ {
+   "name": "Whismur",
+   "id": 293,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/293.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Loudred",
+   "id": 294,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/294.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Exploud",
+   "id": 295,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/295.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Makuhita",
+   "id": 296,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/296.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Hariyama",
+   "id": 297,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/297.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Azurill",
+   "id": 298,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/298.png",
+   "primaryType": "Normal",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Nosepass",
+   "id": 299,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/299.png",
+   "primaryType": "Rock",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Skitty",
+   "id": 300,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/300.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Delcatty",
+   "id": 301,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/301.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Sableye",
+   "id": 302,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/302.png",
+   "primaryType": "Dark",
+   "secondaryType": "Ghost"
+ },
+ {
+   "name": "Mawile",
+   "id": 303,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/303.png",
+   "primaryType": "Steel",
+   "secondaryType": "Fairy"
+ },
+ {
+   "name": "Aron",
+   "id": 304,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/304.png",
+   "primaryType": "Steel",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Lairon",
+   "id": 305,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/305.png",
+   "primaryType": "Steel",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Aggron",
+   "id": 306,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306.png",
+   "primaryType": "Steel",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Meditite",
+   "id": 307,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/307.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Medicham",
+   "id": 308,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/308.png",
+   "primaryType": "Fighting",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Electrike",
+   "id": 309,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/309.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Manectric",
+   "id": 310,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/310.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Plusle",
+   "id": 311,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/311.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Minun",
+   "id": 312,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/312.png",
+   "primaryType": "Electric",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Volbeat",
+   "id": 313,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/313.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Illumise",
+   "id": 314,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/314.png",
+   "primaryType": "Bug",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Roselia",
+   "id": 315,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/315.png",
+   "primaryType": "Grass",
+   "secondaryType": "Poison"
+ },
+ {
+   "name": "Gulpin",
+   "id": 316,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/316.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Swalot",
+   "id": 317,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/317.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Carvanha",
+   "id": 318,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/318.png",
+   "primaryType": "Water",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Sharpedo",
+   "id": 319,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/319.png",
+   "primaryType": "Water",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Wailmer",
+   "id": 320,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/320.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Wailord",
+   "id": 321,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/321.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Numel",
+   "id": 322,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/322.png",
+   "primaryType": "Fire",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Camerupt",
+   "id": 323,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/323.png",
+   "primaryType": "Fire",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Torkoal",
+   "id": 324,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/324.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Spoink",
+   "id": 325,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/325.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Grumpig",
+   "id": 326,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/326.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Spinda",
+   "id": 327,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/327.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Trapinch",
+   "id": 328,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/328.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Vibrava",
+   "id": 329,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/329.png",
+   "primaryType": "Ground",
+   "secondaryType": "Dragon"
+ },
+ {
+   "name": "Flygon",
+   "id": 330,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
+   "primaryType": "Ground",
+   "secondaryType": "Dragon"
+ },
+ {
+   "name": "Cacnea",
+   "id": 331,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/331.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Cacturne",
+   "id": 332,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/332.png",
+   "primaryType": "Grass",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Swablu",
+   "id": 333,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/333.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Altaria",
+   "id": 334,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Zangoose",
+   "id": 335,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/335.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Seviper",
+   "id": 336,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/336.png",
+   "primaryType": "Poison",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Lunatone",
+   "id": 337,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/337.png",
+   "primaryType": "Rock",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Solrock",
+   "id": 338,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/338.png",
+   "primaryType": "Rock",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Barboach",
+   "id": 339,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/339.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Whiscash",
+   "id": 340,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/340.png",
+   "primaryType": "Water",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Corphish",
+   "id": 341,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/341.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Crawdaunt",
+   "id": 342,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/342.png",
+   "primaryType": "Water",
+   "secondaryType": "Dark"
+ },
+ {
+   "name": "Baltoy",
+   "id": 343,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/343.png",
+   "primaryType": "Ground",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Claydol",
+   "id": 344,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/344.png",
+   "primaryType": "Ground",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Lileep",
+   "id": 345,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/345.png",
+   "primaryType": "Rock",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Cradily",
+   "id": 346,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/346.png",
+   "primaryType": "Rock",
+   "secondaryType": "Grass"
+ },
+ {
+   "name": "Anorith",
+   "id": 347,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/347.png",
+   "primaryType": "Rock",
+   "secondaryType": "Bug"
+ },
+ {
+   "name": "Armaldo",
+   "id": 348,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/348.png",
+   "primaryType": "Rock",
+   "secondaryType": "Bug"
+ },
+ {
+   "name": "Feebas",
+   "id": 349,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/349.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Milotic",
+   "id": 350,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/350.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Castform",
+   "id": 351,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/351.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Kecleon",
+   "id": 352,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/352.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Shuppet",
+   "id": 353,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/353.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Banette",
+   "id": 354,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/354.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Duskull",
+   "id": 355,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/355.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Dusclops",
+   "id": 356,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/356.png",
+   "primaryType": "Ghost",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Tropius",
+   "id": 357,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/357.png",
+   "primaryType": "Grass",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Chimecho",
+   "id": 358,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/358.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Absol",
+   "id": 359,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/359.png",
+   "primaryType": "Dark",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Wynaut",
+   "id": 360,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/360.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Snorunt",
+   "id": 361,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/361.png",
+   "primaryType": "Ice",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Glalie",
+   "id": 362,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/362.png",
+   "primaryType": "Ice",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Spheal",
+   "id": 363,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/363.png",
+   "primaryType": "Ice",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Sealeo",
+   "id": 364,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/364.png",
+   "primaryType": "Ice",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Walrein",
+   "id": 365,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/365.png",
+   "primaryType": "Ice",
+   "secondaryType": "Water"
+ },
+ {
+   "name": "Clamperl",
+   "id": 366,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/366.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Huntail",
+   "id": 367,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/367.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Gorebyss",
+   "id": 368,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/368.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Relicanth",
+   "id": 369,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/369.png",
+   "primaryType": "Water",
+   "secondaryType": "Rock"
+ },
+ {
+   "name": "Luvdisc",
+   "id": 370,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/370.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Bagon",
+   "id": 371,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/371.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Shelgon",
+   "id": 372,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/372.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Salamence",
+   "id": 373,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/373.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Beldum",
+   "id": 374,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/374.png",
+   "primaryType": "Steel",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Metang",
+   "id": 375,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/375.png",
+   "primaryType": "Steel",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Metagross",
+   "id": 376,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376.png",
+   "primaryType": "Steel",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Regirock",
+   "id": 377,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/377.png",
+   "primaryType": "Rock",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Regice",
+   "id": 378,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/378.png",
+   "primaryType": "Ice",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Registeel",
+   "id": 379,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/379.png",
+   "primaryType": "Steel",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Latias",
+   "id": 380,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Latios",
+   "id": 381,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Kyogre",
+   "id": 382,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/382.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Groudon",
+   "id": 383,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
+   "primaryType": "Ground",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Rayquaza",
+   "id": 384,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png",
+   "primaryType": "Dragon",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Jirachi",
+   "id": 385,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/385.png",
+   "primaryType": "Steel",
+   "secondaryType": "Psychic"
+ },
+ {
+   "name": "Deoxys",
+   "id": 386,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/386.png",
+   "primaryType": "Psychic",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Turtwig",
+   "id": 387,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/387.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Grotle",
+   "id": 388,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/388.png",
+   "primaryType": "Grass",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Torterra",
+   "id": 389,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/389.png",
+   "primaryType": "Grass",
+   "secondaryType": "Ground"
+ },
+ {
+   "name": "Chimchar",
+   "id": 390,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/390.png",
+   "primaryType": "Fire",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Monferno",
+   "id": 391,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/391.png",
+   "primaryType": "Fire",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Infernape",
+   "id": 392,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/392.png",
+   "primaryType": "Fire",
+   "secondaryType": "Fighting"
+ },
+ {
+   "name": "Piplup",
+   "id": 393,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Prinplup",
+   "id": 394,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/394.png",
+   "primaryType": "Water",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Empoleon",
+   "id": 395,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/395.png",
+   "primaryType": "Water",
+   "secondaryType": "Steel"
+ },
+ {
+   "name": "Starly",
+   "id": 396,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/396.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Staravia",
+   "id": 397,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/397.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Staraptor",
+   "id": 398,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/398.png",
+   "primaryType": "Normal",
+   "secondaryType": "Flying"
+ },
+ {
+   "name": "Bidoof",
+   "id": 399,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/399.png",
+   "primaryType": "Normal",
+   "secondaryType": "Nothing"
+ },
+ {
+   "name": "Bibarel",
+   "id": 400,
+   "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/400.png",
+   "primaryType": "Normal",
+   "secondaryType": "Water"
+ },
+     {
+         "name": "Kricketot",
+         "id": 401,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/401.png",
+         "primaryType": "Bug",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Kricketune",
+         "id": 402,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/402.png",
+         "primaryType": "Bug",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Shinx",
+         "id": 403,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/403.png",
+         "primaryType": "Electric",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Luxio",
+         "id": 404,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/404.png",
+         "primaryType": "Electric",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Luxray",
+         "id": 405,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/405.png",
+         "primaryType": "Electric",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Budew",
+         "id": 406,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/406.png",
+         "primaryType": "Grass",
+         "secondaryType": "Poison"
+     },
+     {
+         "name": "Roserade",
+         "id": 407,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/407.png",
+         "primaryType": "Grass",
+         "secondaryType": "Poison"
+     },
+     {
+         "name": "Cranidos",
+         "id": 408,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/408.png",
+         "primaryType": "Rock",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Rampardos",
+         "id": 409,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/409.png",
+         "primaryType": "Rock",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Shieldon",
+         "id": 410,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/410.png",
+         "primaryType": "Rock",
+         "secondaryType": "Steel"
+     },
+     {
+         "name": "Bastiodon",
+         "id": 411,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/411.png",
+         "primaryType": "Rock",
+         "secondaryType": "Steel"
+     },
+     {
+         "name": "Burmy",
+         "id": 412,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/412.png",
+         "primaryType": "Bug",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Wormadam",
+         "id": 413,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/413.png",
+         "primaryType": "Bug",
+         "secondaryType": "Grass"
+     },
+     {
+         "name": "Wormadam (Sandy Cloak)",
+         "id": 413,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/413-sandy.png",
+         "primaryType": "Bug",
+         "secondaryType": "Ground"
+     },
+     {
+         "name": "Wormadam (Trash Cloak)",
+         "id": 413,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/413-trash.png",
+         "primaryType": "Bug",
+         "secondaryType": "Steel"
+     },
+     {
+         "name": "Mothim",
+         "id": 414,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/414.png",
+         "primaryType": "Bug",
+         "secondaryType": "Flying"
+     },
+     {
+         "name": "Combee",
+         "id": 415,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/415.png",
+         "primaryType": "Bug",
+         "secondaryType": "Flying"
+     },
+     {
+         "name": "Vespiquen",
+         "id": 416,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/416.png",
+         "primaryType": "Bug",
+         "secondaryType": "Flying"
+     },
+     {
+         "name": "Pachirisu",
+         "id": 417,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/417.png",
+         "primaryType": "Electric",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Buizel",
+         "id": 418,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/418.png",
+         "primaryType": "Water",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Floatzel",
+         "id": 419,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/419.png",
+         "primaryType": "Water",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Cherubi",
+         "id": 420,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/420.png",
+         "primaryType": "Grass",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Cherrim",
+         "id": 421,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/421.png",
+         "primaryType": "Grass",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Shellos",
+         "id": 422,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/422.png",
+         "primaryType": "Water",
+         "secondaryType": "Nothing"
+     },
+     {
+         "name": "Gastrodon",
+         "id": 423,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/423.png",
+         "primaryType": "Water",
+         "secondaryType": "Ground"
+     },
+     {
+         "name": "Ambipom",
+         "id": 424,
+         "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/424.png",
+         "primaryType": "Normal",
+         "secondaryType": "Nothing"
+     }
+]

@@ -17,8 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         let storyboard = UIStoryboard(name: "LoadingView", bundle: nil)
-        let controler = storyboard.instantiateViewController(withIdentifier: "LoadingView")
-        let nav = UINavigationController(rootViewController: controler)
+        let controller = storyboard.instantiateViewController(withIdentifier: "LoadingView")
+//        let controller = TabBarController()
+        let nav = UINavigationController(rootViewController: controller)
         window.rootViewController = nav
         window.makeKeyAndVisible()
         self.window = window

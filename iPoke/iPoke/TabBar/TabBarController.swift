@@ -23,18 +23,14 @@ class TabBarController: UITabBarController {
     
     private func setupTabBarController() {
         
-        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-        let controler = storyboard.instantiateViewController(withIdentifier: "Profile")
-        
         let homeVC = UINavigationController(rootViewController: HomeViewController())
-        let favoriteVC = UINavigationController(rootViewController: FavoriteViewController())
-        let profileVC = UINavigationController(rootViewController: controler)
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
-        self.setViewControllers([homeVC, favoriteVC, profileVC], animated: false)
+        self.setViewControllers([homeVC, profileVC], animated: false)
         
         guard let items = self.tabBar.items else {return}
         
-        let images = ["house.fill", "star.fill", "person.fill"]
+        let images = ["house.fill", "person.fill"]
         
         for x in 0...items.count - 1 {
             items[x].image = UIImage(systemName: images[x])
@@ -43,4 +39,10 @@ class TabBarController: UITabBarController {
         self.tabBar.tintColor = .black
     }
     
+}
+
+extension TabBarController: FavoriteViewControllerDelegate {
+    func tappedFavoriteButton(data: Pokedex) {
+        print("Botão favorito clicado para o item \(data)")
+    }
 }
